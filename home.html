@@ -6,14 +6,15 @@
     <title>Home - Sustainable Cities & Communities</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/home.css">
+    <script src="js/home.js"></script>
 </head>
 <body>
     <!-- Header with Navigation -->
     <header class="header">
-        <div class="wrapper">
+        <div class="header-container">
             <div class="header-content">
                 <div class="logo-section">
-                    <img src="/placeholder.svg?height=50&width=50" alt="Sustainable Cities Logo" class="logo">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Sustainable Cities Logo" class="logo">
                     <h1 class="site-title">Sustainable Cities</h1>
                 </div>
                 <nav class="navigation">
@@ -27,32 +28,39 @@
                         <li><a href="team.html" class="nav-link">Team</a></li>
                     </ul>
                 </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </div>
         </div>
     </header>
-<main class="main">
+
+    <main class="main">
         <div class="wrapper">
             <!-- Hero Section -->
             <section class="hero">
                 <div class="hero-content">
                     <h2 class="hero-title">Building Sustainable Cities and Communities</h2>
                     <p class="hero-subtitle">
-                        Promoting inclusive, safe, resilient and sustainable urbanization for all. 
+                        Promoting inclusive, safe, resilient, and sustainable urbanization for all. 
                         Join us in creating cities that work for everyone while protecting our planet.
                     </p>
                 </div>
                 <div class="hero-image">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Modern sustainable city skyline" class="hero-img">
+                    <img src="images/hero_image.webp" alt="Modern sustainable city skyline with green buildings and renewable energy" class="hero-img">
                 </div>
             </section>
 
             <!-- Mission Section -->
-            <section class="mission">
+            <section class="mission" data-animate="mission">
                 <div class="mission-content">
                     <h3 class="section-title">Our Mission</h3>
                     <p class="mission-text">
                         Our website is dedicated to advancing <strong>Sustainable Development Goal 11: Sustainable Cities and Communities</strong>. 
-                        We believe that by 2030, we can ensure access for all to adequate, safe and affordable housing and basic services.
+                        We aim to promote access to safe, affordable housing, sustainable transport, inclusive urban planning, and green spaces, 
+                        inspiring sustainable urban development through education and resources.
                     </p>
                 </div>
             </section>
@@ -61,61 +69,62 @@
             <section class="content-links">
                 <h3 class="section-title">Explore Our Content</h3>
                 <div class="cards-grid">
-                    <div class="content-card" onclick="location.href='content_ST1.html'">
+                    <a href="content_ST1.html" class="content-card" data-animate="card" data-delay="0">
                         <div class="card-image">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Urban Planning Content" class="card-img">
+                            <img src="images/urban_planning.webp" alt="City planning map for smart urban development" class="card-img">
                         </div>
                         <div class="card-content">
                             <h4 class="card-title">Urban Planning & Smart Cities</h4>
                             <p class="card-description">
                                 Discover innovative approaches to urban planning and smart city technologies.
                             </p>
-                            <span class="card-link">Explore Now</span>
+                            <button>Explore Now</button>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="content-card" onclick="location.href='content_ST2.html'">
+                    <a href="content_ST2.html" class="content-card" data-animate="card" data-delay="200">
                         <div class="card-image">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Sustainable Transportation" class="card-img">
+                            <img src="images/green_transport.webp" alt="Bicycles and electric buses in a sustainable urban transport system" class="card-img">
                         </div>
                         <div class="card-content">
                             <h4 class="card-title">Sustainable Transportation</h4>
                             <p class="card-description">
                                 Explore sustainable transportation solutions that reduce emissions.
                             </p>
-                            <span class="card-link">Explore Now</span>
+                            <button>Explore Now</button>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="content-card" onclick="location.href='content_ST3.html'">
+                    <a href="content_ST3.html" class="content-card" data-animate="card" data-delay="400">
                         <div class="card-image">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Green Spaces" class="card-img">
+                            <img src="images/green_spaces.webp" alt="Urban park with green spaces for community recreation" class="card-img">
                         </div>
                         <div class="card-content">
                             <h4 class="card-title">Green Spaces & Communities</h4>
                             <p class="card-description">
                                 Learn about the importance of green spaces in urban areas.
                             </p>
-                            <span class="card-link">Explore Now</span>
+                            <button>Explore Now</button>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="content-card" onclick="location.href='content_ST4.html'">
+                    <a href="content_ST4.html" class="content-card" data-animate="card" data-delay="600">
                         <div class="card-image">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Affordable Housing" class="card-img">
+                            <img src="images/affordable_housing.webp" alt="Eco-friendly affordable housing for inclusive communities" class="card-img">
                         </div>
                         <div class="card-content">
                             <h4 class="card-title">Affordable Housing & Inclusion</h4>
                             <p class="card-description">
                                 Understand challenges and solutions for inclusive housing.
                             </p>
-                            <span class="card-link">Explore Now</span>
+                            <button>Explore Now</button>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </section>
         </div>
     </main>
+    
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="wrapper">
