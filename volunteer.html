@@ -1,331 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Urban Green Spaces</title>
-    <link rel="stylesheet" href="/css/global.css" />
-    <!-- <link rel="stylesheet" href="volunteer.css"> -->
-  </head>
-  <body>
-    <!-- Header Section and nevigation bar-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Sustainable Cities & Communities</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="volunteer.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
     <header class="header">
-      <div class="header-container">
-        <div class="header-content">
-          <div class="logo-section">
-            <img
-              src="/placeholder.svg?height=40&width=40"
-              alt="Sustainable Cities Logo"
-              class="logo"
-            />
-            <h1 class="site-title">Sustainable Cities</h1>
-          </div>
-          <nav class="navigation">
-            <ul class="nav-list">
-              <li><a href="home.html" class="nav-link">Home</a></li>
-              <li>
-                <a href="volunteer.html" class="nav-link active">Volunteer</a>
-              </li>
-              <li><a href="table.html" class="nav-link">Table</a></li>
-              <li><a href="profile.html" class="nav-link">Profile</a></li>
-              <li><a href="feedback.html" class="nav-link">Feedback</a></li>
-              <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
-              <li><a href="team.html" class="nav-link">Team</a></li>
-            </ul>
-          </nav>
-          <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Sustainable Cities Logo" class="logo">
+                    <h1 class="site-title">Sustainable Cities</h1>
+                </div>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="home.html" class="nav-link active">Home</a></li>
+                        <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+                        <li><a href="table.html" class="nav-link">Table</a></li>
+                        <li><a href="profile.html" class="nav-link">Profile</a></li>
+                        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                        <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
+                        <li><a href="team.html" class="nav-link">Team</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
         </div>
-      </div>
     </header>
 
+    <!-- Main Content -->
     <main class="main">
-      <div class="wrapper">
+        <div class="wrapper">
         <section class="volunteer-intro">
-          <h2>Urban Green Spaces</h2>
-          <p>
-            Join us in planting trees, maintaining parks, and creating green
-            pockets in cities. Help make urban environments healthier and more
-            livable for everyone!
-          </p>
+            <h2>Urban Green Spaces</h2>
+            <p>Join us in planting trees, maintaining parks, and creating green pockets in cities. Help make urban environments healthier and more livable for everyone!</p>
         </section>
 
         <!-- Scrollable Information Section -->
         <section class="volunteer-programs">
-          <div class="filter-container">
-            <label for="sort-programs">Sort by:</label>
-            <select id="sort-programs" name="sort-programs">
-              <option value="popular">Most Popular</option>
-              <option value="recent">Most Recent</option>
-              <option value="upcoming">Highest Ratings</option>
-              <option value="location">Location</option>
-            </select>
-          </div>
-
-          <div class="programs-container">
-            <!-- Program Card 1 -->
-            <div class="program-card">
-              <img
-                src="urban-green-spaces.jpg"
-                alt="Improve city parks and gardens"
-              />
-              <h3>Urban Green Spaces Initiative</h3>
-              <p>
-                Support urban greenery by planting trees, maintaining parks and
-                paths. Creating rooftop gardens and leading environmental
-                awareness activities in local communities.
-              </p>
-              <ul class="program-details">
-                <li>Commitment: 3-6 hours/week</li>
-                <li>Location: Public parks & community gardens</li>
-                <li>Impact: Greener, cleaner spaces for 500+ residents</li>
-              </ul>
-              <button class="apply-btn">Apply Now</button>
+            <div class="filter-container">
+                <label for="sort-programs">Sort by:</label>
+                <select id="sort-programs" name="sort-programs">
+                    <option value="popular">Most Popular</option>
+                    <option value="recent">Most Recent</option>
+                    <option value="upcoming">Highest Ratings</option>
+                    <option value="location">Location</option>
+                </select>
             </div>
+            
+            <div class="programs-container">
+                <!-- Program Card 1 -->
+                <div class="program-card">
+                    <img src="urban-green-spaces.jpg" alt="Improve city parks and gardens">
+                    <h3>Urban Green Spaces Initiative</h3>
+                    <p>Support urban greenery by planting trees, maintaining parks and paths. Creating rooftop gardens and leading environmental awareness activities in local communities.</p>
+                    <ul class="program-details">
+                        <li>Commitment: 3-6 hours/week</li>
+                        <li>Location: Public parks & community gardens</li>
+                        <li>Impact: Greener, cleaner spaces for 500+ residents</li>
+                    </ul>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
 
-            <!-- Program Card 2 -->
-            <div class="program-card">
-              <img
-                src="eco-friendly-mobility.jpg"
-                alt="Supporting clean and green transport"
-              />
-              <h3>Eco-Friendly Mobility Volunteer</h3>
-              <p>
-                Promote sustainable transport by organizing bike repair
-                workshops, public transport awareness sessions and carpool
-                initiatives to reduce city congestion and pollution.
-              </p>
-              <ul class="program-details">
-                <li>Commitment: 2-4 hours/week</li>
-                <li>Location: Local schools, offices & transit hubs</li>
-                <li>Impact: 100+ people weekly adopt greener travel options</li>
-              </ul>
-              <button class="apply-btn">Apply Now</button>
-            </div>
+                <!-- Program Card 2 -->
+                <div class="program-card">
+                    <img src="eco-friendly-mobility.jpg" alt="Supporting clean and green transport">
+                    <h3>Eco-Friendly Mobility Volunteer</h3>
+                    <p>Promote sustainable transport by organizing bike repair workshops, public transport awareness sessions and carpool initiatives to reduce city congestion and pollution.</p>
+                    <ul class="program-details">
+                        <li>Commitment: 2-4 hours/week</li>
+                        <li>Location: Local schools, offices & transit hubs</li>
+                        <li>Impact: 100+ people weekly adopt greener travel options</li>
+                    </ul>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
 
-            <!-- Program Card 3 -->
-            <div class="program-card">
-              <img
-                src="urban-waste-management.jpg"
-                alt="Waste management support"
-              />
-              <h3>Urban Waste Management Support</h3>
-              <p>
-                Educate communities on waste segregation, composting and
-                recycling through hands on sessions and clean-up campaigns.
-                Volunteers also assist in local waste audits.
-              </p>
-              <ul class="program-details">
-                <li>Commitment: 3-5 hours/week</li>
-                <li>Location: Community centers & residential zones</li>
-                <li>Impact: Divert 1 ton+ of waste/month from landfills</li>
-              </ul>
-              <button class="apply-btn">Apply Now</button>
-            </div>
+                <!-- Program Card 3 -->
+                <div class="program-card">
+                    <img src="urban-waste-management.jpg" alt="Waste management support">
+                    <h3>Urban Waste Management Support</h3>
+                    <p>Educate communities on waste segregation, composting and recycling through hands on sessions and clean-up campaigns. Volunteers also assist in local waste audits.</p>
+                    <ul class="program-details">
+                        <li>Commitment: 3-5 hours/week</li>
+                        <li>Location: Community centers & residential zones</li>
+                        <li>Impact: Divert 1 ton+ of waste/month from landfills</li>
+                    </ul>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
 
-            <!-- Program Card 4 -->
-            <div class="program-card">
-              <img
-                src="safe-housing-advocate.jpg"
-                alt="Safe and affordable housing"
-              />
-              <h3>Safe Housing Advocate</h3>
-              <p>
-                Support safe and affordable housing by assisting in surveys,
-                outreach programs and renovation activities for low income
-                families or disaster prone communities.
-              </p>
-              <ul class="program-details">
-                <li>Commitment: 4-6 hours/week</li>
-                <li>Location: Urban neighborhoods & NGO shelters</li>
-                <li>Impact: Improved housing for 30+ families</li>
-              </ul>
-              <button class="apply-btn">Apply Now</button>
-            </div>
+                <!-- Program Card 4 -->
+                <div class="program-card">
+                    <img src="safe-housing-advocate.jpg" alt="Safe and affordable housing">
+                    <h3>Safe Housing Advocate</h3>
+                    <p>Support safe and affordable housing by assisting in surveys, outreach programs and renovation activities for low income families or disaster prone communities.</p>
+                    <ul class="program-details">
+                        <li>Commitment: 4-6 hours/week</li>
+                        <li>Location: Urban neighborhoods & NGO shelters</li>
+                        <li>Impact: Improved housing for 30+ families</li>
+                    </ul>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
 
-            <!-- Program Card 5 -->
-            <div class="program-card">
-              <img
-                src="smart-cities-digital-literacy.jpg"
-                alt="Providing tech skills for city residents"
-              />
-              <h3>Smart Cities Digital Literacy Program</h3>
-              <p>
-                Help bridge the digital divide by teaching basic tech skills,
-                internet safety and online services to underserved urban
-                residents.
-              </p>
-              <ul class="program-details">
-                <li>Commitment: 2-4 hours/week</li>
-                <li>Location: Libraries & community halls</li>
-                <li>Impact: 200+ individuals gain tech access monthly</li>
-              </ul>
-              <button class="apply-btn">Apply Now</button>
+                <!-- Program Card 5 -->
+                <div class="program-card">
+                    <img src="smart-cities-digital-literacy.jpg" alt="Providing tech skills for city residents">
+                    <h3>Smart Cities Digital Literacy Program</h3>
+                    <p>Help bridge the digital divide by teaching basic tech skills, internet safety and online services to underserved urban residents.</p>
+                    <ul class="program-details">
+                        <li>Commitment: 2-4 hours/week</li>
+                        <li>Location: Libraries & community halls</li>
+                        <li>Impact: 200+ individuals gain tech access monthly</li>
+                    </ul>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
             </div>
-          </div>
         </section>
 
         <!-- User Ratings and Reviews Section -->
         <section class="ratings-reviews">
-          <div class="overall-rating">
-            <h2>Volunteer Experience Ratings</h2>
-            <div class="rating-summary">
-              <span class="rating-number">9.4/10</span>
-              <span class="rating-text">Exceptional</span>
-              <p>Based on 285 volunteer contributions and feedback</p>
-            </div>
-          </div>
-
-          <div class="reviews-container">
-            <!-- Review 1 -->
-            <div class="review-card">
-              <div class="review-header">
-                <h4>⭐️⭐️⭐️⭐️⭐️ Empowering experience</h4>
-                <span class="review-date">May 10, 2025</span>
-              </div>
-              <p class="review-content">
-                Volunteering in the Urban Garden Initiative taught me how
-                sustainable food systems can transform neighborhoods. It's
-                amazing to see vacant land become a green, productive space.
-              </p>
-              <a href="#" class="see-more">See More</a>
-              <div class="reviewer">Anjali D.</div>
+            <div class="overall-rating">
+                <h2>Volunteer Experience Ratings</h2>
+                <div class="rating-summary">
+                    <span class="rating-number">9.4/10</span>
+                    <span class="rating-text">Exceptional</span>
+                    <p>Based on 285 volunteer contributions and feedback</p>
+                </div>
             </div>
 
-            <!-- Review 2 -->
-            <div class="review-card">
-              <div class="review-header">
-                <h4>⭐️⭐️⭐️⭐️⭐️ Truly inspiring!</h4>
-                <span class="review-date">May 8, 2025</span>
-              </div>
-              <p class="review-content">
-                Participating in the Green Commute Campaign helped me reduce my
-                carbon footprint and encourage others to cycle. It's a powerful
-                way to connect with the city and the community.
-              </p>
-              <a href="#" class="see-more">See More</a>
-              <div class="reviewer">David R.</div>
-            </div>
+            <div class="reviews-container">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>⭐️⭐️⭐️⭐️⭐️ Empowering experience</h4>
+                        <span class="review-date">May 10, 2025</span>
+                    </div>
+                    <p class="review-content">Volunteering in the Urban Garden Initiative taught me how sustainable food systems can transform neighborhoods. It's amazing to see vacant land become a green, productive space.</p>
+                    <a href="#" class="see-more">See More</a>
+                    <div class="reviewer">Anjali D.</div>
+                </div>
 
-            <!-- Review 3 -->
-            <div class="review-card">
-              <div class="review-header">
-                <h4>⭐️⭐️⭐️⭐️ Well-organized and impactful</h4>
-                <span class="review-date">June 17, 2025</span>
-              </div>
-              <p class="review-content">
-                The Safe Streets for All project is one of the best initiatives
-                I've joined. We worked on making public spaces safer and more
-                inclusive. The change is visible and it feels great!
-              </p>
-              <a href="#" class="see-more">See More</a>
-              <div class="reviewer">Joe R.</div>
-            </div>
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>⭐️⭐️⭐️⭐️⭐️ Truly inspiring!</h4>
+                        <span class="review-date">May 8, 2025</span>
+                    </div>
+                    <p class="review-content">Participating in the Green Commute Campaign helped me reduce my carbon footprint and encourage others to cycle. It's a powerful way to connect with the city and the community.</p>
+                    <a href="#" class="see-more">See More</a>
+                    <div class="reviewer">David R.</div>
+                </div>
 
-            <!-- Review 4 -->
-            <div class="review-card">
-              <div class="review-header">
-                <h4>⭐️⭐️⭐️⭐️⭐️ Great learning opportunity!</h4>
-                <span class="review-date">June 19, 2025</span>
-              </div>
-              <p class="review-content">
-                Through the Affordable Housing Volunteer Program. I gained hands
-                on experience supporting sustainable housing for low income
-                families. It's more than volunteering it's building futures.
-              </p>
-              <a href="#" class="see-more">See More</a>
-              <div class="reviewer">Mark T.</div>
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>⭐️⭐️⭐️⭐️ Well-organized and impactful</h4>
+                        <span class="review-date">June 17, 2025</span>
+                    </div>
+                    <p class="review-content">The Safe Streets for All project is one of the best initiatives I've joined. We worked on making public spaces safer and more inclusive. The change is visible and it feels great!</p>
+                    <a href="#" class="see-more">See More</a>
+                    <div class="reviewer">Joe R.</div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4>⭐️⭐️⭐️⭐️⭐️ Great learning opportunity!</h4>
+                        <span class="review-date">June 19, 2025</span>
+                    </div>
+                    <p class="review-content">Through the Affordable Housing Volunteer Program. I gained hands on experience supporting sustainable housing for low income families. It's more than volunteering it's building futures.</p>
+                    <a href="#" class="see-more">See More</a>
+                    <div class="reviewer">Mark T.</div>
+                </div>
             </div>
-          </div>
         </section>
 
         <!-- Feedback Form -->
         <section class="feedback-section">
-          <h2>Share Your Experience for a Sustainable Future</h2>
-          <div class="feedback-form">
-            <div class="rating-input">
-              <p>Rate your overall experience:</p>
-              <div class="emoji-rating">
-                <button class="emoji-btn">😞</button>
-                <button class="emoji-btn">😐</button>
-                <button class="emoji-btn">🙂</button>
-                <button class="emoji-btn">😊</button>
-                <button class="emoji-btn">😍</button>
-              </div>
+            <h2>Share Your Experience for a Sustainable Future</h2>
+            <div class="feedback-form">
+                <div class="rating-input">
+                    <p>Rate your overall experience:</p>
+                    <div class="emoji-rating">
+                        <button class="emoji-btn">😞</button>
+                        <button class="emoji-btn">😐</button>
+                        <button class="emoji-btn">🙂</button>
+                        <button class="emoji-btn">😊</button>
+                        <button class="emoji-btn">😍</button>
+                    </div>
+                </div>
+                <textarea placeholder="Write your feedback here... Tell us about your experience with this Sustainable Cities."></textarea>
+                <div class="form-buttons">
+                    <button class="submit-btn">Submit Feedback</button>
+                    <button class="cancel-btn">Cancel</button>
+                </div>
             </div>
-            <textarea
-              placeholder="Write your feedback here... Tell us about your experience with this Sustainable Cities."
-            ></textarea>
-            <div class="form-buttons">
-              <button class="submit-btn">Submit Feedback</button>
-              <button class="cancel-btn">Cancel</button>
-            </div>
-          </div>
         </section>
-      </div>
+        </div>
     </main>
+
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
-      <div class="wrapper">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h4 class="footer-title">Team Members</h4>
-            <ul class="footer-links">
-              <li>
-                <a href="editor_pages/pageEditor_ST1.html" class="footer-link"
-                  >Student 1 - Editor Page</a
-                >
-              </li>
-              <li>
-                <a href="editor_pages/pageEditor_ST2.html" class="footer-link"
-                  >Student 2 - Editor Page</a
-                >
-              </li>
-              <li>
-                <a href="editor_pages/pageEditor_ST3.html" class="footer-link"
-                  >Student 3 - Editor Page</a
-                >
-              </li>
-              <li>
-                <a href="editor_pages/pageEditor_ST4.html" class="footer-link"
-                  >Student 4 - Editor Page</a
-                >
-              </li>
-            </ul>
-          </div>
+        <div class="wrapper">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Team Members</h4>
+                    <ul class="footer-links">
+                        <li><a href="editor_pages/editor_ST1.html" class="footer-link">Student 1 - Editor Page</a></li>
+                        <li><a href="editor_pages/editor_ST2.html" class="footer-link">Student 2 - Editor Page</a></li>
+                        <li><a href="editor_pages/editor_ST3.html" class="footer-link">Student 3 - Editor Page</a></li>
+                        <li><a href="editor_pages/editor_ST4.html" class="footer-link">Student 4 - Editor Page</a></li>
+                    </ul>
+                </div>
 
-          <div class="footer-section">
-            <h4 class="footer-title">Quick Links</h4>
-            <ul class="footer-links">
-              <li>
-                <a href="volunteer.html" class="footer-link">Volunteer</a>
-              </li>
-              <li><a href="feedback.html" class="footer-link">Feedback</a></li>
-              <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
-              <li><a href="team.html" class="footer-link">Team</a></li>
-            </ul>
-          </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="volunteer.html" class="footer-link">Volunteer</a></li>
+                        <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+                        <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="team.html" class="footer-link">Team</a></li>
+                    </ul>
+                </div>
 
-          <div class="footer-section">
-            <h4 class="footer-title">About This Project</h4>
-            <p class="footer-text">
-              This website is dedicated to promoting UN Sustainable Development
-              Goal 11: Sustainable Cities and Communities. Created as part of an
-              educational initiative to raise awareness about urban
-              sustainability.
-            </p>
-          </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">About This Project</h4>
+                    <p class="footer-text">
+                        This website is dedicated to promoting UN Sustainable Development Goal 11: 
+                        Sustainable Cities and Communities. Created as part of an educational initiative 
+                        to raise awareness about urban sustainability.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Sustainable Cities & Communities. All rights reserved.</p>
+            </div>
         </div>
-
-        <div class="footer-bottom">
-          <p class="copyright">
-            © 2024 Sustainable Cities & Communities. All rights reserved.
-          </p>
-        </div>
-      </div>
     </footer>
-  </body>
+</body>
 </html>
