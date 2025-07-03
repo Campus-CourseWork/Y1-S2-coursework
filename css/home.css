@@ -1,8 +1,3 @@
-/* Main Content */
-.main {
-  margin-top: 120px; /* Account for floating header */
-  padding: var(--spacing-xl) 0;
-}
 
 /* Hero Section */
 .hero {

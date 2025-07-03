@@ -711,3 +711,8 @@ button:focus {
   outline: 3px solid var(--accent-yellow);
   outline-offset: 2px;
 }
+
+main {
+  margin-top: 120px; /* Account for floating header */
+  padding: var(--spacing-xl) 0;
+}
