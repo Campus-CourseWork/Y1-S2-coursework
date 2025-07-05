@@ -1,0 +1,99 @@
+/* Section Title */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+/* Internal Navigation */
+.internal-nav {
+  margin-bottom: 2rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(45,90,39,0.07);
+}
+.internal-nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.internal-nav > ul > li {
+  margin-bottom: 0.7rem;
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+.internal-nav ul ul {
+  margin-top: 0.3rem;
+  margin-left: 1.2rem;
+  font-size: 0.98rem;
+  font-weight: 400;
+}
+.internal-nav a {
+  color: var(--primary-green-dark);
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.15em 0.4em;
+  transition: background 0.2s, color 0.2s;
+}
+.internal-nav a:hover, .internal-nav a:focus {
+  background: var(--primary-green-light);
+  color: #fff;
+  outline: none;
+}
+
+/* Content Images */
+.content-image {
+  display: block;
+  margin: 1.2rem auto 1.8rem auto;
+  max-width: 95%;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(45,90,39,0.10);
+}
+
+/* Go to Top Button */
+.go-to-top {
+  display: inline-block;
+  margin-top: 2.5rem;
+  background: var(--primary-green);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.7em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(45,90,39,0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.go-to-top:hover, .go-to-top:focus {
+  background: var(--primary-green-hover);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(45,90,39,0.13);
+  outline: none;
+}
+
+/* Section Spacing */
+.wrapper section {
+  margin-bottom: 2.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .internal-nav {
+    padding: 0.7rem 0.6rem;
+  }
+  .content-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .go-to-top {
+    padding: 0.5em 1em;
+    font-size: 0.98rem;
+  }
+}
