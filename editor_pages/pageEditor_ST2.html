@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor's Page - Student 2</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/editor_pages/pageEditor_ST2.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="/placeholder.svg?height=40&width=40" alt="Sustainable Cities Logo" class="logo">
+                    <h1 class="site-title">Sustainable Cities</h1>
+                </div>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="home.html" class="nav-link active">Home</a></li>
+                        <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+                        <li><a href="table.html" class="nav-link">Table</a></li>
+                        <li><a href="profile.html" class="nav-link">Profile</a></li>
+                        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                        <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
+                        <li><a href="team.html" class="nav-link">Team</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <main class="main">
+        <div class="wrapper">
+           <h1>Editor's Page - Student 2</h1>
+            <nav class="internal-nav" aria-label="Internal navigation for editor's page">
+                <ul>
+                    <li><a href="#overview">Content Overview</a></li>
+                    <li><a href="#technical">Technical Description</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#challenges">Challenges and Lessons Learned</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
+            </nav>
+
+            <section id="overview" class="section">
+                <h2>Content Overview</h2>
+                <p><strong>Name and Role:</strong> I am Student 2, responsible for developing the Home Page, Table Page, and Content Page (Urban Planning & Smart Cities) for our Sustainable Cities and Communities website. My role focuses on creating engaging, accessible, and informative pages that align with UN Sustainable Development Goal 11 <sup><a href="#ref1">[1]</a></sup>.</p>
+                <p><strong>Completed Tasks/Pages:</strong></p>
+                <ul>
+                    <li><strong>Home Page:</strong> A comprehensive landing page featuring a hero section, mission statement, and interactive content tiles that introduce visitors to sustainable urban development concepts.</li>
+                    <li><strong>Table Page:</strong> An interactive data comparison page showcasing sustainability metrics for eight major cities, providing valuable insights into urban sustainability performance.</li>
+                    <li><strong>Content Page (Urban Planning & Smart Cities):</strong> An educational resource page exploring urban planning principles and smart city technologies, with detailed explanations and visual content.</li>
+                </ul>
+            </section>
+
+            <section id="technical" class="section">
+                <h2>Technical Description</h2>
+                <h3>Home Page</h3>
+                <p>The Home Page implements a modern, responsive design using semantic HTML5 elements for optimal accessibility and SEO. The page structure utilizes <code>&lt;main&gt;</code> as the primary content container, with <code>&lt;section&gt;</code> elements organizing different content areas. The hero section employs <code>&lt;h1&gt;</code> for the main heading, ensuring proper document hierarchy and screen reader compatibility.</p>
+                
+                <p>The hero image is implemented using <code>&lt;img&gt;</code> with descriptive <code>alt</code> text and responsive styling (<code>max-width: 600px</code>, <code>border-radius: 8px</code>). Interactive content tiles are created using <code>&lt;a&gt;</code> elements with <code>class="content-card"</code>, enabling both visual appeal and functional navigation. CSS Flexbox (<code>display: flex</code>, <code>flex-wrap: wrap</code>) creates a responsive grid layout that adapts to different screen sizes.</p>
+                
+                <p>Hover effects are implemented using <code>transform: scale(1.05)</code> and <code>transition: all 0.3s ease</code> to provide visual feedback and enhance user engagement. The color scheme uses CSS custom properties (variables) for consistency, with green tones reflecting the sustainability theme.</p>
+
+                <h3>Table Page</h3>
+                <p>The Table Page demonstrates advanced table implementation using semantic HTML structure. The <code>&lt;table&gt;</code> element is enhanced with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> for proper document structure and accessibility. The table header uses <code>colspan</code> attributes to merge cells for the main title, creating a clean, professional appearance.</p>
+                
+                <p>Thumbnail images in the header are implemented with <code>&lt;img&gt;</code> elements featuring <code>title</code> attributes for tooltip functionality and <code>alt</code> text for accessibility. The table employs <code>.alt-row</code> CSS class with <code>background-color: #f0f8f0</code> for alternating row colors, improving readability and visual hierarchy.</p>
+                
+                <p>External links to data sources use <code>target="_blank"</code> to open in new tabs and <code>aria-label</code> attributes for screen reader accessibility. The sustainability data presented is based on the Arcadis Sustainable Cities Index <sup><a href="#ref2">[2]</a></sup>, providing reliable metrics for urban sustainability comparison. CSS properties including <code>box-shadow</code>, <code>border-collapse: collapse</code>, and <code>border-radius</code> create a modern, polished appearance. Interactive hover effects (<code>tr:hover</code>) enhance user experience by highlighting rows on mouse interaction.</p>
+
+                <h3>Content Page: Urban Planning & Smart Cities</h3>
+                <p>The Content Page implements a comprehensive information architecture using proper heading hierarchy (<code>&lt;h1&gt;</code> through <code>&lt;h3&gt;</code>) for optimal document structure and accessibility. The internal navigation system is built using nested <code>&lt;ul&gt;</code> elements with anchor links (<code>&lt;a href="#section-id"&gt;</code>) for smooth scrolling navigation.</p>
+                
+                <p>Content images are styled with <code>max-width: 600px</code> for responsiveness and <code>border: 1px solid #ddd</code> for visual definition. The "Go to Top" button is implemented using <code>position: fixed</code> for persistent visibility, with <code>background-color: #4CAF50</code> and <code>border-radius: 50%</code> for modern styling. JavaScript functionality controls button visibility based on scroll position.</p>
+                
+                <p>The page uses CSS Grid and Flexbox for responsive layout management, ensuring optimal display across devices. Typography is enhanced with <code>line-height: 1.6</code> for readability and <code>font-weight</code> variations for visual hierarchy. Color contrast ratios meet WCAG 2.1 AA standards <sup><a href="#ref3">[3]</a></sup> for accessibility compliance.</p>
+            </section>
+
+            <section id="links" class="section">
+                <h2>Links</h2>
+                <p>Links to implemented pages and their validation results:</p>
+                <ul>
+                    <li><a href="home.html" target="_blank">Home Page</a></li>
+                    <li><a href="table.html" target="_blank">Table Page</a></li>
+                    <li><a href="content_ST2.html" target="_blank">Content Page: Urban Planning & Smart Cities</a></li>
+                    <li><a href="validation_home.html" target="_blank">Validation for Home Page</a></li>
+                    <li><a href="validation_table.html" target="_blank">Validation for Table Page</a></li>
+                    <li><a href="validation_content_ST2.html" target="_blank">Validation for Content Page</a></li>
+                </ul>
+            </section>
+
+            <section id="challenges" class="section">
+                <h2>Challenges and Lessons Learned</h2>
+                <p><strong>Challenges:</strong></p>
+                <ul>
+                    <li>Ensuring responsiveness across devices, resolved by using Flexbox and Grid layouts.</li>
+                    <li>Sourcing accurate 2025 data for the Table Page, addressed by estimating based on Arcadis reports.</li>
+                    <li>Balancing visual appeal with accessibility, achieved by adding aria-labels and alt text.</li>
+                </ul>
+                <p><strong>Lessons Learned:</strong></p>
+                <ul>
+                    <li>Semantic HTML improves accessibility and SEO.</li>
+                    <li>Modular CSS ensures design consistency.</li>
+                    <li>Cross-browser testing is critical for compatibility.</li>
+                </ul>
+            </section>
+
+            <section id="accessibility" class="section">
+                <h2>Accessibility</h2>
+                <p>All pages prioritize accessibility through:</p>
+                <ul>
+                    <li><strong>Semantic HTML</strong>: Using <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;table&gt;</code> following HTML5 specifications <sup><a href="#ref4">[4]</a></sup>.</li>
+                    <li><strong>Alt Text</strong>: Descriptive alt text for images (e.g., "Smart city skyline with digital overlays").</li>
+                    <li><strong>Aria-labels</strong>: For links and navigation elements.</li>
+                    <li><strong>Keyboard Navigation</strong>: Ensuring all interactive elements are accessible.</li>
+                    <li><strong>Color Contrast</strong>: Meeting WCAG 2.1 AA standards <sup><a href="#ref3">[3]</a></sup>.</li>
+                </ul>
+            </section>
+
+            <section id="compliance" class="section">
+                <h2>Compliance</h2>
+                <p>The pages comply with Jisc regulations by:</p>
+                <ul>
+                    <li>Using valid HTML5 and CSS3, verified with the W3C Validator.</li>
+                    <li>Ensuring accessibility per WCAG 2.1 guidelines.</li>
+                    <li>Providing clear content aligned with SDG 11.</li>
+                    <li>Including footer links to editor and validation pages.</li>
+                </ul>
+            </section>
+
+            <section id="references" class="section">
+                <h2>References</h2>
+                <ol>
+                    <li id="ref1">United Nations. (n.d.). Sustainable Development Goal 11: Sustainable Cities and Communities. <a href="https://globalgoals.org/goals/11-sustainable-cities-and-communities/" target="_blank">https://globalgoals.org/goals/11-sustainable-cities-and-communities/</a></li>
+                    <li id="ref2">Arcadis. (2024). Sustainable Cities Index 2024. <a href="https://placebrandobserver.com/arcadis-sustainable-cities-index-2024/" target="_blank">https://placebrandobserver.com/arcadis-sustainable-cities-index-2024/</a></li>
+                    <li id="ref3">W3C. (2018). Web Content Accessibility Guidelines (WCAG) 2.1. <a href="https://www.w3.org/TR/WCAG21/" target="_blank">https://www.w3.org/TR/WCAG21/</a></li>
+                    <li id="ref4">W3C. (n.d.). HTML5 Specification. <a href="https://html.spec.whatwg.org/" target="_blank">https://html.spec.whatwg.org/</a></li>
+                    <li id="ref5">W3C. (n.d.). CSS3 Specification. <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">https://www.w3.org/Style/CSS/Overview.en.html</a></li>
+                </ol>
+            </section>
+            
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer"  >
+        <div class="wrapper">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Team Members</h4>
+                    <ul class="footer-links">
+                        <li><a href="editor_pages/pageEditor_ST1.html" class="footer-link">Student 1 - Editor Page</a></li>
+                        <li><a href="editor_pages/pageEditor_ST2.html" class="footer-link">Student 2 - Editor Page</a></li>
+                        <li><a href="editor_pages/pageEditor_ST3.html" class="footer-link">Student 3 - Editor Page</a></li>
+                        <li><a href="editor_pages/pageEditor_ST4.html" class="footer-link">Student 4 - Editor Page</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="volunteer.html" class="footer-link">Volunteer</a></li>
+                        <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+                        <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="team.html" class="footer-link">Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">About This Project</h4>
+                    <p class="footer-text">
+                        This website is dedicated to promoting UN Sustainable Development Goal 11: 
+                        Sustainable Cities and Communities. Created as part of an educational initiative 
+                        to raise awareness about urban sustainability.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Sustainable Cities & Communities. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
