@@ -1,0 +1,6 @@
+.team-container { max-width: 800px; margin: 20px auto; display: flex; flex-wrap: wrap; gap: 20px; }
+.team-member { position: relative; width: 200px; text-align: center; }
+.team-member img { width: 100%; height: auto; transition: opacity 0.3s; }
+.team-member img:hover { opacity: 0.7; }
+.details { display: none; position: absolute; top: 100%; background: white; padding: 10px; border: 1px solid #ccc; z-index: 1; }
+.team-member:hover .details { display: block; }
