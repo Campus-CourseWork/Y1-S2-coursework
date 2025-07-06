@@ -9,18 +9,19 @@ h1{
     padding: 20px;
     border-radius: 25px;
     background: #ffffff;
-    box-shadow:  7px 7px 98px #d8d6d6,
-             -7px -7px 98px #ffffff;
-
+    box-shadow:  7px 7px 98px #d8d6d6,-7px -7px 98px #ffffff;
+    overflow: hidden;
 }
 .form-personal-sec {
     border:none;
 }
-
+.personal-title{
+    padding-bottom: 10px;
+}
 .form-feedback-sec{
-    margin-bottom: 50px;
+    margin-bottom: 5%;
     border: none;
-    padding: 50px;
+    padding: 30px;
     border-radius: 30px;
     background: rgb(255, 255, 255);
     box-shadow: rgba(111, 225, 153, 0.25) 0px 30px 50px -12px inset, rgba(66, 210, 95, 0.511) 0px 18px 26px -18px inset;
@@ -43,40 +44,72 @@ h1{
     display: block;
     margin-bottom: 5px;
 }
+textarea {
+  resize: vertical;
+  max-width: 100%;
+  border-color: black;
+}
 input, textarea, select { 
     width: 100%;
-    padding: 8px;
-    border-radius: 12px;
+    padding: 0.65rem 0.6rem;
+    border: 2px solid #444;
+    border-radius: 10px;
     background: var(--input-color);
     color: rgb(0, 0, 0);
     outline: none;
     font-size: 14px;
+    box-sizing: border-box;
+}
+.error-message {
+  display: none;
+  color: #b00020;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+.form-group input:invalid:not(:placeholder-shown) {
+  border: 2px solid #b00020;
+}
+.form-group input:invalid:not(:placeholder-shown) + .error-message {
+  display: block;
+}
+.star-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.rate-title {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 600;
+}
+.stars {
+  display: inline-flex;
+  flex-direction: row-reverse; 
+  gap: 0.35rem;
+}
+.stars input {
+  display: none;
+}
+.stars label {
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  transition: color 0.2s;
 }
 
-input:invalid, textarea:invalid { 
-    border: 2px solid red;
+/*on hover */
+.stars label:hover,
+.stars label:hover ~ label {
+  color: gold;
+  -webkit-text-stroke: 0;
 }
-.error-message { 
-    color: red;
-    font-size: 14px;
-    display: none;
-}
-input:invalid + .error-message, textarea:invalid + .error-message { 
-    display: block; 
-}
-.rating { 
-    display: flex;
-    gap: 10px;
-}
-.rating input { 
-    display: none;
-}
-.rating label { 
-    font-size: 24px;
-    cursor: pointer;
-}
-.rating label:hover { 
-    color: gold;
+
+/*when selected */
+.stars input:checked ~ label {
+  color: gold;
+  -webkit-text-stroke: 0;
 }
 
 
