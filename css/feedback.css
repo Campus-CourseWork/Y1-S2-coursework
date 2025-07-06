@@ -1,0 +1,83 @@
+h1{
+    text-align: center;
+    padding: 50px;
+}
+.form-container { 
+    max-width: 500px; 
+    margin: 20px auto;
+    margin-top: 100px; 
+    padding: 20px;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow:  7px 7px 98px #d8d6d6,
+             -7px -7px 98px #ffffff;
+
+}
+.form-personal-sec {
+    border:none;
+}
+
+.form-feedback-sec{
+    margin-bottom: 50px;
+    border: none;
+    padding: 50px;
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(111, 225, 153, 0.25) 0px 30px 50px -12px inset, rgba(66, 210, 95, 0.511) 0px 18px 26px -18px inset;
+}
+.form-group-type{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15.2px;
+    padding-bottom: 20px;
+}
+.form-group-type label{
+    padding-right: 10px;
+}
+.form-group { 
+    margin-bottom: 20px;
+    
+}
+.form-group label { 
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea, select { 
+    width: 100%;
+    padding: 8px;
+    border-radius: 12px;
+    background: var(--input-color);
+    color: rgb(0, 0, 0);
+    outline: none;
+    font-size: 14px;
+}
+
+input:invalid, textarea:invalid { 
+    border: 2px solid red;
+}
+.error-message { 
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+input:invalid + .error-message, textarea:invalid + .error-message { 
+    display: block; 
+}
+.rating { 
+    display: flex;
+    gap: 10px;
+}
+.rating input { 
+    display: none;
+}
+.rating label { 
+    font-size: 24px;
+    cursor: pointer;
+}
+.rating label:hover { 
+    color: gold;
+}
+
+
+
