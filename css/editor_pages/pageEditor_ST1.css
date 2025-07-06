@@ -2,13 +2,79 @@
 
 /* Main Content Layout */
 .main {
-  margin-top: 120px; /* Account for floating header */
+  margin-top: 120px;
   padding: 2rem 0;
   min-height: calc(100vh - 120px);
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
-/* Page Title Styling */
+/* CSS Grid for Main Content Area */
+.content-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: sticky;
+    top: 140px;
+    height: fit-content;
+    padding-right: 1rem;
+}
+
+.sidebar-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+/* Internal Navigation */
+.internal-nav {
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 0;
+  border-left: 4px solid #22c55e;
+}
+
+.internal-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.internal-nav > ul > li {
+  margin-bottom: 0;
+}
+
+.internal-nav a {
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.internal-nav a:hover {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+/* Page Title Styling - Adjust for grid layout */
 .main h1 {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 700;
@@ -20,6 +86,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+  grid-column: 1 / -1; /* Make h1 span across both columns in the grid */
 }
 
 .main h1::after {
@@ -34,46 +101,16 @@
   border-radius: 2px;
 }
 
-/* Internal Navigation */
-.internal-nav {
-  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
-  border-radius: 16px;
-  padding: 2rem;
-  margin: 2rem 0 3rem;
-  border-left: 4px solid #22c55e;
+/* Centered Heading - also make it span across columns */
+#CenteredHeading {
+  text-align: center;
+  background: linear-gradient(135deg, #22c55e, #3b82f6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  grid-column: 1 / -1; /* Make it span across both columns in the grid */
+  margin-bottom: 2rem;
 }
 
-.internal-nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.internal-nav > ul > li {
-  margin-bottom: 0;
-}
-
-.internal-nav a {
-  color: #374151;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  display: inline-block;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.internal-nav a:hover {
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-  color: white;
-  transform: translateX(5px);
-  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
-}
 
 /* Section Styling */
 .section {
@@ -103,8 +140,8 @@
   font-size: clamp(1.8rem, 3vw, 2.2rem);
   font-weight: 600;
   color: #1a1a1a;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
   border-bottom: 2px solid #e5e7eb;
   position: relative;
 }
@@ -117,14 +154,6 @@
   width: 60px;
   height: 2px;
   background: linear-gradient(90deg, #22c55e, #3b82f6);
-}
-
-/* Centered Heading */
-#CenteredHeading {
-  text-align: center;
-  background: linear-gradient(135deg, #22c55e, #3b82f6);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .section h3 {
@@ -147,6 +176,7 @@
   line-height: 1.8;
   color: #4b5563;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 .section p strong {
@@ -232,8 +262,17 @@
     padding: 1rem 0;
   }
 
-  .main h1 {
-    padding: 2rem 0 1.5rem;
+  /* Adjust grid for smaller screens */
+  .content-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+  }
+
+  .sidebar {
+      position: static;
+      top: auto;
+      padding-right: 0;
+      order: 1;
   }
 
   .internal-nav {
@@ -243,13 +282,20 @@
   }
 
   .internal-nav ul {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.5rem;
+    justify-content: center;
   }
 
   .internal-nav a {
     text-align: center;
     padding: 0.75rem 1rem;
+  }
+
+  .main h1,
+  #CenteredHeading {
+      grid-column: auto;
   }
 
   .section {

@@ -36,173 +36,178 @@
         </div>
     </header>
 
-    <!-- Main content  -->
+    <!-- Main content -->
     <main class="main">
-        <div class="wrapper">
-            <h1>Editor's Page - Student 1</h1>
-            <h2 id="CenteredHeading">D M P P Dissanayake</h2>
-            <nav class="internal-nav" aria-label="Internal navigation for editor's page">
-                <ul>
-                    <li><a href="#overview">Content Overview</a></li>
-                    <li><a href="#splash">Splash Screen</a></li>
-                    <li><a href="#volunteer">Volunteer Page</a></li>
-                    <li><a href="#content">Content Page</a></li>
-                    <li><a href="#challenge">Challenges and Lessons Learned</a></li>
-                    <li><a href="#compliance">Compliance</a></li>
-                    <li><a href="#references">References</a></li>
-                </ul>
-            </nav>
+        <div class="wrapper content-grid">
+            <aside class="sidebar">
+                <nav class="internal-nav" aria-label="Internal navigation for editor's page">
+                    <p class="sidebar-title">On this page</p>
+                    <ul>
+                        <li><a href="#overview">Content Overview</a></li>
+                        <li><a href="#splash">Splash Screen</a></li>
+                        <li><a href="#volunteer">Volunteer Page</a></li>
+                        <li><a href="#content">Content Page</a></li>
+                        <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                        <li><a href="#compliance">Compliance</a></li>
+                        <li><a href="#references">References</a></li>
+                    </ul>
+                </nav>
+            </aside>
 
-            <!-- Content Overview Section -->
-            <section id="overview" class="section">
-                <h2>Content Overview</h2>
-                <p><strong>Name and Role:</strong> I am Student 1, responsible for developing the Splash Screen, Volunteer Page and a Content Page for our Sustainable Cities and Communities website. My role focuses on creating visually engaging and informative pages that align with UN Sustainable Development Goal 11 <sup><a href="#ref1">[1]</a></sup>.</p>
-                <p><strong>Completed Tasks/Pages:</strong></p>
-                <ul>
-                    <li><strong>Splash Page:</strong> A dynamic and engaging introductory page designed for a smooth loading experience with visual effects.</li>
-                    <li><strong>Volunteer Page:</strong> A comprehensive page for volunteer programs, featuring filtering options, a review submission form and testimonials.</li>
-                    <li><strong>Content Page (Green Spaces and Communities):</strong> A detailed educational resource page focusing on specific aspects of urban sustainability, structured with an internal navigation sidebar.</li>
-                </ul>
-            </section>
+            <div class="main-content-area">
+                <h1>Editor's Page - Student 1</h1>
+                <h2 id="CenteredHeading">D M P P Dissanayake</h2>
 
-            <!-- Splash Screen Sections -->
-            <section id="splash" class="section">
-                <h2>Splash Screen</h2>
-                <h3>Technical Description</h3>
-                <p>
-                    The Splash Page (<code>splash.html</code>) uses a modern, clean design with a focus on visual engagement and
-                    a smooth loading experience. Key HTML elements include a <code>&lt;div&gt;</code> for background circles
-                    (<code>bg-elements</code>) that provide a dynamic visual effect, a <code>hero</code> section with a logo and title
-                    and a <code>loading-section</code> with a progress bar and pulsating dots.
-                    CSS (<code>splash.css</code>) leverages <code>flexbox</code> and <code>grid</code> for layout, custom CSS <code>variables</code> for a consistent
-                    color palette (e.g., <code>--primary-light</code>, <code>--green-primary</code>) and subtle <code>shadows</code>
-                    (<code>--shadow-md</code>). Animations like <code>fadeIn</code>, <code>scaleIn</code>, <code>float</code>, <code>progressAnimation</code> and <code>dotPulse</code>
-                    are used for visual flair during loading. The design is <code>responsive</code>, adapting to different screen
-                    sizes using <code>media queries</code>.
-                </p>
-                <h3>Accessibility</h3>
-                <p>
-                    Accessibility considerations include semantic HTML tags for better screen reader interpretation.
-                    Text content has <code>sufficient contrast</code> against background colors. The <code>loading animation</code>
-                    provides a visual cue for progress, although a <code>timeout</code> for redirection is commented out,
-                    which would need careful consideration for users who might need more time. Interactive elements
-                    like <code>navigation links</code> and <code>cards</code> have <code>addEventListener</code> for user interaction, which should also be
-                    <code>keyboard navigable</code>. Images use <code>alt</code> attributes for descriptive text.
-                </p>
-                <h3>Validation Report</h3>
-                <p>View the <a href="/validation_ST1.html#splashValidation">Splash Screen Validation Report</a>.</p>
+                <!-- Content Overview Section -->
+                <section id="overview" class="section">
+                    <h2>Content Overview</h2>
+                    <p><strong>Name and Role:</strong> I am Student 1, responsible for developing the Splash Screen, Volunteer Page and a Content Page for our Sustainable Cities and Communities website. My role focuses on creating visually engaging and informative pages that align with UN Sustainable Development Goal 11 <sup><a href="#ref1">[1]</a></sup>.</p>
+                    <p><strong>Completed Tasks/Pages:</strong></p>
+                    <ul>
+                        <li><strong>Splash Page:</strong> A dynamic and engaging introductory page designed for a smooth loading experience with visual effects.</li>
+                        <li><strong>Volunteer Page:</strong> A comprehensive page for volunteer programs, featuring filtering options, a review submission form and testimonials.</li>
+                        <li><strong>Content Page (Green Spaces and Communities):</strong> A detailed educational resource page focusing on specific aspects of urban sustainability, structured with an internal navigation sidebar.</li>
+                    </ul>
+                </section>
 
-                <h3>Link to the page</h3>
-                <p>Explore the <a href="splash.html">Splash Screen</a> to get started!</p>
+                <!-- Splash Screen Sections -->
+                <section id="splash" class="section">
+                    <h2>Splash Screen</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                        The Splash Page (<code>splash.html</code>) uses a modern, clean design with a focus on visual engagement and
+                        a smooth loading experience. Key HTML elements include a <code>&lt;div&gt;</code> for background circles
+                        (<code>bg-elements</code>) that provide a dynamic visual effect, a <code>hero</code> section with a logo and title
+                        and a <code>loading-section</code> with a progress bar and pulsating dots.
+                        CSS (<code>splash.css</code>) leverages <code>flexbox</code> and <code>grid</code> for layout, custom CSS <code>variables</code> for a consistent
+                        color palette (e.g., <code>--primary-light</code>, <code>--green-primary</code>) and subtle <code>shadows</code>
+                        (<code>--shadow-md</code>). Animations like <code>fadeIn</code>, <code>scaleIn</code>, <code>float</code>, <code>progressAnimation</code> and <code>dotPulse</code>
+                        are used for visual flair during loading. The design is <code>responsive</code>, adapting to different screen
+                        sizes using <code>media queries</code>.
+                    </p>
+                    <h3>Accessibility</h3>
+                    <p>
+                        Accessibility considerations include semantic HTML tags for better screen reader interpretation.
+                        Text content has <code>sufficient contrast</code> against background colors. The <code>loading animation</code>
+                        provides a visual cue for progress, although a <code>timeout</code> for redirection is commented out,
+                        which would need careful consideration for users who might need more time. Interactive elements
+                        like <code>navigation links</code> and <code>cards</code> have <code>addEventListener</code> for user interaction, which should also be
+                        <code>keyboard navigable</code>. Images use <code>alt</code> attributes for descriptive text.
+                    </p>
+                    <h3>Validation Report</h3>
+                    <p>View the <a href="/validation_ST1.html#splashValidation">Splash Screen Validation Report</a>.</p>
 
-            </section>
+                    <h3>Link to the page</h3>
+                    <p>Explore the <a href="splash.html">Splash Screen</a> to get started!</p>
+                </section>
 
-            <!-- Volunteer Page Sections -->
-            <section id="volunteer" class="section">
-                <h2>Volunteer Page</h2>
-                <h3>Technical Description</h3>
-                <p>
-                    The Volunteer Page (<code>volunteer.html</code>) features an introduction section, a programs section with
-                    filtering options, a review submission form and a testimonials section. The layout is structured
-                    using a <code>&lt;main&gt;</code> element with a <code>wrapper</code> class.
-                    CSS (<code>volunteer.css</code>) utilizes flexbox for the filter container and grid for <code>programs-container</code>
-                    and <code>reviews-container</code> to create responsive layouts. Variables from <code>global.css</code> are extensively
-                    used for consistent styling, including <code>--neutral-light</code> for backgrounds, <code>--spacing-2xl</code> for
-                    padding, and <code>--radius-lg</code> for rounded corners. Buttons and input fields are styled for
-                    hover and focus states using <code>transition</code> for smooth visual feedback. The program cards
-                    have a uniform image height and subtle hover effects (<code>transform</code>, <code>box-shadow</code>).
-                </p>
-                <h3>Accessibility</h3>
-                <p>
-                    Accessibility features include clear <code>label</code> associations for form inputs (e.g., <code>for</code> attribute
-                    on labels linked to <code>id</code> on inputs). Interactive elements like buttons and select dropdowns
-                    are styled to indicate focus, enhancing keyboard navigation. Error messages for form validation
-                    would ideally be programmatically linked to their respective fields using ARIA attributes for
-                    screen reader users.
-                </p>
-                <h3>Validation Report</h3>
-                <p>View the <a href="/validation_ST1.html#volunteerValidation">Volunteer Page Validation Report</a>.</p>
+                <!-- Volunteer Page Sections -->
+                <section id="volunteer" class="section">
+                    <h2>Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                        The Volunteer Page (<code>volunteer.html</code>) features an introduction section, a programs section with
+                        filtering options, a review submission form and a testimonials section. The layout is structured
+                        using a <code>&lt;main&gt;</code> element with a <code>wrapper</code> class.
+                        CSS (<code>volunteer.css</code>) utilizes flexbox for the filter container and grid for <code>programs-container</code>
+                        and <code>reviews-container</code> to create responsive layouts. Variables from <code>global.css</code> are extensively
+                        used for consistent styling, including <code>--neutral-light</code> for backgrounds, <code>--spacing-2xl</code> for
+                        padding, and <code>--radius-lg</code> for rounded corners. Buttons and input fields are styled for
+                        hover and focus states using <code>transition</code> for smooth visual feedback. The program cards
+                        have a uniform image height and subtle hover effects (<code>transform</code>, <code>box-shadow</code>).
+                    </p>
+                    <h3>Accessibility</h3>
+                    <p>
+                        Accessibility features include clear <code>label</code> associations for form inputs (e.g., <code>for</code> attribute
+                        on labels linked to <code>id</code> on inputs). Interactive elements like buttons and select dropdowns
+                        are styled to indicate focus, enhancing keyboard navigation. Error messages for form validation
+                        would ideally be programmatically linked to their respective fields using ARIA attributes for
+                        screen reader users.
+                    </p>
+                    <h3>Validation Report</h3>
+                    <p>View the <a href="/validation_ST1.html#volunteerValidation">Volunteer Page Validation Report</a>.</p>
 
-                <h3>Link to the page</h3>
-                <p>Explore the <a href="volunteer.html">Volunteer Page</a> to get started!</p>
-            </section>
+                    <h3>Link to the page</h3>
+                    <p>Explore the <a href="volunteer.html">Volunteer Page</a> to get started!</p>
+                </section>
 
-            <!-- Content Page Sections -->
-            <section id="content" class="section">
-                <h2>Content Page</h2>
-                <h3>Technical Description</h3>
-                <p>
-                    The Content Page (<code>content_ST1.html</code>) is designed with a main content area (<code>main wrapper</code>)
-                    that employs a flexbox layout to position an internal navigation sidebar (<code>internal-nav</code>)
-                    alongside the primary article content (<code>content-article</code>). The internal navigation is <code>sticky</code>
-                    for easy access to different sections.
-                    CSS (<code>content_ST1.css</code>) defines the layout and styling, using <code>flex: 0 0 250px</code> for the
-                    sidebar's fixed width and <code>flex-grow: 1</code> for the article to fill remaining space.
-                    Responsive adjustments are made using <code>@media</code> queries for various screen sizes,
-                    modifying <code>grid-template-columns</code> for image grids and case study containers.
-                    Styling uses <code>global.css</code> variables for colors (<code>--primary-green-dark</code>, <code>--neutral-white</code>),
-                    spacing (<code>--spacing-lg</code>), border-radius (<code>--radius-lg</code>) and shadows (<code>--shadow-md</code>).
-                    Internal navigation links have hover and active states for visual feedback.
-                </p>
-                <h3>Accessibility</h3>
-                <p>
-                    The page uses semantic HTML5 elements like <code>&lt;aside&gt;</code>, <code>&lt;article&gt;</code> and <code>&lt;nav&gt;</code> to structure
-                    content logically, aiding screen readers. The internal navigation provides clear links to
-                    sections within the page, improving usability. Images have descriptive <code>alt</code> attributes.
-                    The "Go to Top" button enhances navigation. Font sizes and line heights are defined using
-                    CSS variables for readability and responsive design ensures content is accessible on
-                    smaller screens.
-                </p>
-                <h3>Validation Report</h3>
-                <p>View the <a href="/validation_ST1.html#contentValidation">Content Page Validation Report</a>.</p>
+                <!-- Content Page Sections -->
+                <section id="content" class="section">
+                    <h2>Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                        The Content Page (<code>content_ST1.html</code>) is designed with a main content area (<code>main wrapper</code>)
+                        that employs a flexbox layout to position an internal navigation sidebar (<code>internal-nav</code>)
+                        alongside the primary article content (<code>content-article</code>). The internal navigation is <code>sticky</code>
+                        for easy access to different sections.
+                        CSS (<code>content_ST1.css</code>) defines the layout and styling, using <code>flex: 0 0 250px</code> for the
+                        sidebar's fixed width and <code>flex-grow: 1</code> for the article to fill remaining space.
+                        Responsive adjustments are made using <code>@media</code> queries for various screen sizes,
+                        modifying <code>grid-template-columns</code> for image grids and case study containers.
+                        Styling uses <code>global.css</code> variables for colors (<code>--primary-green-dark</code>, <code>--neutral-white</code>),
+                        spacing (<code>--spacing-lg</code>), border-radius (<code>--radius-lg</code>) and shadows (<code>--shadow-md</code>).
+                        Internal navigation links have hover and active states for visual feedback.
+                    </p>
+                    <h3>Accessibility</h3>
+                    <p>
+                        The page uses semantic HTML5 elements like <code>&lt;aside&gt;</code>, <code>&lt;article&gt;</code> and <code>&lt;nav&gt;</code> to structure
+                        content logically, aiding screen readers. The internal navigation provides clear links to
+                        sections within the page, improving usability. Images have descriptive <code>alt</code> attributes.
+                        The "Go to Top" button enhances navigation. Font sizes and line heights are defined using
+                        CSS variables for readability and responsive design ensures content is accessible on
+                        smaller screens.
+                    </p>
+                    <h3>Validation Report</h3>
+                    <p>View the <a href="/validation_ST1.html#contentValidation">Content Page Validation Report</a>.</p>
 
-                <h3>Link to the page</h3>
-                <p>Explore the <a href="content_ST1.html">Content Page</a> to get started!</p>
-            </section>
+                    <h3>Link to the page</h3>
+                    <p>Explore the <a href="content_ST1.html">Content Page</a> to get started!</p>
+                </section>
 
-            <!-- Challenges and Lessons Learned Section -->
-            <section id="challenge" class="section">
-                <h2>Challenges and Lessons Learned</h2>
-                <p>
-                    During the development of these pages, one of the main challenges was ensuring consistent
-                    styling across all pages while maintaining responsiveness. This was addressed by
-                    leveraging CSS variables defined in <code>global.css</code> for colors, spacing and typography.
-                    Another challenge was implementing interactive elements and animations, such as the loading
-                    bar and card hover effects, while keeping performance in mind. 
-                </p>
-                <p>
-                    Lessons learned include
-                    the importance of a well-defined CSS architecture using variables and thorough testing
-                    across different devices and browsers to ensure a consistent user experience.
-                    Understanding the interplay between HTML structure and CSS properties was also crucial
-                    in achieving the desired visual and functional outcomes.
-                </p>
-            </section>
+                <!-- Challenges and Lessons Learned Section -->
+                <section id="challenge" class="section">
+                    <h2>Challenges and Lessons Learned</h2>
+                    <p>
+                        During the development of these pages, one of the main challenges was ensuring consistent
+                        styling across all pages while maintaining responsiveness. This was addressed by
+                        leveraging CSS variables defined in <code>global.css</code> for colors, spacing and typography.
+                        Another challenge was implementing interactive elements and animations, such as the loading
+                        bar and card hover effects, while keeping performance in mind.
+                    </p>
+                    <p>
+                        Lessons learned include
+                        the importance of a well-defined CSS architecture using variables and thorough testing
+                        across different devices and browsers to ensure a consistent user experience.
+                        Understanding the interplay between HTML structure and CSS properties was also crucial
+                        in achieving the desired visual and functional outcomes.
+                    </p>
+                </section>
 
-            <!-- Compliance Section -->
-            <section id="compliance" class="section">
-                <h2>Compliance</h2>
-                <p>
-                    The website aims to comply with modern web standards and best practices. HTML5 semantic
-                    elements are used for better structure and accessibility. CSS styling adheres to
-                    responsive design principles to ensure compatibility across various devices.
-                    Efforts have been made to ensure basic accessibility standards are met, such as providing
-                    <code>alt</code> attributes for images and clear focus states for interactive elements.
-                    Further improvements could include more extensive ARIA attributes and
-                    keyboard navigation testing for full WCAG compliance.
-                </p>
-            </section>
+                <!-- Compliance Section -->
+                <section id="compliance" class="section">
+                    <h2>Compliance</h2>
+                    <p>
+                        The website aims to comply with modern web standards and best practices. HTML5 semantic
+                        elements are used for better structure and accessibility. CSS styling adheres to
+                        responsive design principles to ensure compatibility across various devices.
+                        Efforts have been made to ensure basic accessibility standards are met, such as providing
+                        <code>alt</code> attributes for images and clear focus states for interactive elements.
+                        Further improvements could include more extensive ARIA attributes and
+                        keyboard navigation testing for full WCAG compliance.
+                    </p>
+                </section>
 
-            <!-- References Section -->
-            <section id="references" class="section">
-                <h2>References</h2>
-                <ol>
-                    <li id="ref1">United Nations. (n.d.). Sustainable Development Goal 11: Sustainable Cities and Communities. <a href="https://sdgs.un.org/goals/goal11" target="_blank">https://sdgs.un.org/goals/goal11</a></li>
-                    <li id="ref2">WebAIM. (n.d.). Web Accessibility In Mind. <a href="https://webaim.org/" target="_blank">https://webaim.org/</a></li>
-                    <li id="ref3">MDN Web Docs. (n.d.). Web Documentation for Developers. <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">https://developer.mozilla.org/en-US/docs/Web</a></li>
-                    <li id="ref4">W3C. (n.d.). World Wide Web Consortium (W3C). <a href="https://www.w3.org/" target="_blank">https://www.w3.org/</a></li>
-                </ol>
-            </section>
+                <!-- References Section -->
+                <section id="references" class="section">
+                    <h2>References</h2>
+                    <ol>
+                        <li id="ref1">United Nations. (n.d.). Sustainable Development Goal 11: Sustainable Cities and Communities. <a href="https://sdgs.un.org/goals/goal11" target="_blank">https://sdgs.un.org/goals/goal11</a></li>
+                        <li id="ref2">WebAIM. (n.d.). Web Accessibility In Mind. <a href="https://webaim.org/" target="_blank">https://webaim.org/</a></li>
+                        <li id="ref3">MDN Web Docs. (n.d.). Web Documentation for Developers. <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">https://developer.mozilla.org/en-US/docs/Web</a></li>
+                        <li id="ref4">W3C. (n.d.). World Wide Web Consortium (W3C). <a href="https://www.w3.org/" target="_blank">https://www.w3.org/</a></li>
+                    </ol>
+                </section>
+            </div>
         </div>
     </main>
 
