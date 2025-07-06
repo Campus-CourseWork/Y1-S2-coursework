@@ -75,15 +75,11 @@
 .sustainability-table td:nth-child(4):not(:empty) {
   color: var(--primary-green);
 }
-.sustainability-table td:nth-child(4):contains("Medium") {
-  color: var(--secondary-orange);
-}
-.sustainability-table td:nth-child(3):contains("Completed") {
-  color: var(--accent-green-light);
-}
-.sustainability-table td:nth-child(3):contains("In Progress") {
-  color: var(--accent-yellow);
-}
+
+.status.completed { color: var(--accent-green-light); }
+.status.in-progress { color: var(--accent-yellow); }
+.impact.medium { color: var(--secondary-orange); }
+.impact.high { color: var(--primary-green); font-weight: 600; }
 
 .sustainability-table a {
   color: var(--primary-green);
@@ -241,4 +237,17 @@
   text-align: center;
   vertical-align: middle;
   border-right: 2px solid #fff;
+}
+
+/* Visually hidden text for accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
 }
