@@ -1,41 +1,4 @@
-/* Page Editor ST2 Specific Styles */
-/* This file builds upon global.css and provides specific styling for the editor page */
-
-/* Main Content Layout */
-.main {
-  margin-top: 120px; /* Account for floating header */
-  padding: 2rem 0;
-  min-height: calc(100vh - 120px);
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-}
-
-/* Page Title Styling - Similar to content_ST2 */
-.main h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 700;
-  color: #1a1a1a;
-  text-align: center;
-  padding: 3rem 0 2rem;
-  background: linear-gradient(135deg, #22c55e, #3b82f6);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-}
-
-.main h1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(90deg, #22c55e, #3b82f6);
-  border-radius: 2px;
-}
-
-/* Internal Navigation - Similar to content_ST2 */
+/* Internal Navigation - */
 .internal-nav {
   background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
   border-radius: 16px;
@@ -76,7 +39,7 @@
   box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
 }
 
-/* Section Styling - Similar to content_ST2 */
+/* Section Styling - */
 .section {
   background: white;
   border-radius: 20px;
@@ -99,7 +62,7 @@
   border-radius: 20px 20px 0 0;
 }
 
-/* Section Headers - Similar to content_ST2 */
+/* Section Headers - */
 .section h2 {
   font-size: clamp(1.8rem, 3vw, 2.2rem);
   font-weight: 600;
@@ -134,7 +97,7 @@
   border-left-color: #22c55e;
 }
 
-/* Content Styling - Similar to content_ST2 */
+/* Content Styling - */
 .section p {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -147,7 +110,7 @@
   font-weight: 600;
 }
 
-/* List Styling - Similar to content_ST2 */
+/* List Styling - */
 .section ul {
   margin: 1.5rem 0;
   padding-left: 1.5rem;
@@ -176,7 +139,7 @@
   border: 1px solid #e5e7eb;
 }
 
-/* Link Styling within sections - Similar to content_ST2 */
+/* Link Styling within sections - */
 .section a {
   color: #22c55e;
   text-decoration: none;
@@ -218,7 +181,7 @@
   box-shadow: 0 4px 16px rgba(34, 197, 94, 0.15);
 }
 
-/* Responsive Design - Similar to content_ST2 */
+/* Responsive Design - */
 @media (max-width: 768px) {
   .main {
     margin-top: 100px;
@@ -315,7 +278,7 @@
   }
 }
 
-/* Accessibility Enhancements - Similar to content_ST2 */
+/* Accessibility Enhancements - */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -332,7 +295,7 @@
   }
 }
 
-/* Focus Styles for Accessibility - Similar to content_ST2 */
+/* Focus Styles for Accessibility - */
 .internal-nav a:focus,
 .section a:focus {
   outline: 2px solid #22c55e;
@@ -358,7 +321,7 @@
   }
 }
 
-/* Go to Top Floating Button - Similar to content_ST2 */
+/* Go to Top Floating Button - */
 .go-to-top-fixed {
   position: fixed;
   bottom: 1.5rem;
@@ -439,7 +402,7 @@
   to { opacity: 0.92; transform: scale(1); }
 }
 
-/* Print Styles - Similar to content_ST2 */
+/* Print Styles - */
 @media print {
   .internal-nav,
   .go-to-top-fixed {
