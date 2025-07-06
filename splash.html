@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="4;url=home.html"> -->
+    <title>Sustainable Cities & Communities | SDG 11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/splash.css"> <!-- External CSS for splash screen style -->
+</head>
+<body>
+    <div class="bg-elements">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-badge">
+                <img src="/placeholder.svg?height=40&width=40" alt="Sustainable Cities Logo" class="logo">
+            </div>
+            <h1 class="hero-title">Sustainable Cities & Communities</h1>
+            <p class="hero-subtitle">
+                Empowering urban development through innovative solutions, green infrastructure, and inclusive planning for a sustainable future.
+            </p>
+        </section>
+
+        <!-- Content Grid -->
+        <section class="content-grid">
+            <!-- Mission Card -->
+            <div class="card">
+                <h2 class="card-title">Our Mission</h2>
+                <p class="card-text">
+                    Advancing Sustainable Development Goal 11 by promoting access to safe, affordable housing, sustainable transport systems, inclusive urban planning, and green spaces that inspire sustainable urban development through education and innovative resources.
+                </p>
+            </div>
+
+            <!-- Team Card -->
+            <div class="card">
+                <h2 class="card-title">Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-avatar">S1</div>
+                        <div class="team-name">Prashangsana</div>
+                        <div class="team-role">Splash & Volunteer Lead</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar">S2</div>
+                        <div class="team-name">Chamod Sanjula</div>
+                        <div class="team-role">Homepage & Main Lead</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar">S3</div>
+                        <div class="team-name">Ashan Isuru</div>
+                        <div class="team-role">Feedback & Team Lead</div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar">S4</div>
+                        <div class="team-name">N Ramzy</div>
+                        <div class="team-role">Profile & Sitemap Lead</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading Section -->
+        <section class="loading-section">
+            <h3 class="loading-title">Preparing Your Sustainable Journey</h3>
+            <p class="loading-text">Loading interactive content and resources...</p>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-dots">
+                    <span class="progress-dot"></span>
+                    <span class="progress-dot"></span>
+                    <span class="progress-dot"></span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // setTimeout(() => {
+        //     window.location.href = 'home.html';
+        // }, 8000);
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Add your navigation logic here
+            });
+        });
+
+        // Add interactive hover effects
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
