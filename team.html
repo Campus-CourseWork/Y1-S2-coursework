@@ -9,53 +9,82 @@
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-    <header>
-    <nav class="navigation">
-        <ul class="nav-list">
-            <li><a href="home.html" class="nav-link">Home</a></li>
-            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
-            <li><a href="table.html" class="nav-link">Table</a></li>
-            <li><a href="profile.html" class="nav-link">Profile</a></li>
-            <li><a href="feedback.html" class="nav-link">Feedback</a></li>
-            <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
-            <li><a href="team.html" class="nav-link active">Team</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="images/logo.svg" alt="Sustainable Cities Logo" class="logo">
+                    <h1 class="site-title">Sustainable Cities</h1>
+                </div>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="home.html" class="nav-link">Home</a></li>
+                        <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+                        <li><a href="table.html" class="nav-link">Table</a></li>
+                        <li><a href="profile.html" class="nav-link">Profile</a></li>
+                        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                        <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
+                        <li><a href="team.html" class="nav-link active">Team</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
     </header>
     <main class="wrapper">
         <section class="team-container">
             <h1>Our Team</h1>
             <div class="team-member" tabindex="0">
-                <img src="images/student1.jpg" alt="Student 1, responsible for Splash Screen and Volunteer pages">
-                <div class="details">
-                    <h3>Student 1</h3>
-                    <p>Role: Developer</p>
-                    <p>Tasks: Splash Screen, Volunteer, Content_ST1</p>
+              <div class="card-flip">
+                <div class="card-front">
+                  <img src="images/student1.jpg" alt="Student 1, responsible for Splash Screen and Volunteer pages">
                 </div>
+                <div class="card-back details">
+                  <h3>Student 1</h3>
+                  <p>Role: Developer</p>
+                  <p>Tasks: Splash Screen, Volunteer, Content_ST1</p>
+                </div>
+              </div>
             </div>
             <div class="team-member" tabindex="0">
-                <img src="images/student2.jpg" alt="Student 2, responsible for Home Page, Table, and Website Style">
-                <div class="details">
-                    <h3>Student 2</h3>
-                    <p>Role: Lead Designer</p>
-                    <p>Tasks: Home Page, Table, Website Style, Content_ST2</p>
+              <div class="card-flip">
+                <div class="card-front">
+                  <img src="images/student2.jpg" alt="Student 2, responsible for Home Page, Table, and Website Style">
                 </div>
+                <div class="card-back details">
+                  <h3>Student 2</h3>
+                  <p>Role: Lead Designer</p>
+                  <p>Tasks: Home Page, Table, Website Style, Content_ST2</p>
+                </div>
+              </div>
             </div>
             <div class="team-member" tabindex="0">
-                <img src="images/student3.jpg" alt="Student 3, responsible for Feedback and Team pages">
-                <div class="details">
-                    <h3>Student 3</h3>
-                    <p>Role: Developer</p>
-                    <p>Tasks: Feedback, Team, Content_ST3</p>
+              <div class="card-flip">
+                <div class="card-front">
+                  <img src="images/student3.jpg" alt="Student 3, responsible for Feedback and Team pages">
                 </div>
+                <div class="card-back details">
+                  <h3>Student 3</h3>
+                  <p>Role: Developer</p>
+                  <p>Tasks: Feedback, Team, Content_ST3</p>
+                </div>
+              </div>
             </div>
             <div class="team-member" tabindex="0">
-                <img src="images/student4.jpg" alt="Student 4, responsible for User Profile and Sitemap pages">
-                <div class="details">
-                    <h3>Student 4</h3>
-                    <p>Role: Developer</p>
-                    <p>Tasks: User Profile, Sitemap, Content_ST4</p>
+              <div class="card-flip">
+                <div class="card-front">
+                  <img src="images/student4.jpg" alt="Student 4, responsible for User Profile and Sitemap pages">
                 </div>
+                <div class="card-back details">
+                  <h3>Student 4</h3>
+                  <p>Role: Developer</p>
+                  <p>Tasks: User Profile, Sitemap, Content_ST4</p>
+                </div>
+              </div>
             </div>
         </section>
 
