@@ -1,0 +1,41 @@
+.editor-container {
+    max-width: auto; 
+    margin: 20px auto;
+    margin-top: 150px; 
+    padding: 20px;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow:  7px 7px 98px #d8d6d6,-7px -7px 98px #ffffff;
+    overflow: hidden;
+}
+.editor-head{
+    text-align: center;
+    color: rgb(58, 180, 140);
+    padding: 50px;
+    font-size:  50px;
+}
+.editor-section {
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+    scroll-margin-top: 2rem;
+}
+.editor-section h2{
+    font-weight: bold;
+    color: #058f28;
+}
+.editor-section h3{
+    font-size: 20px;
+}
+.editor-para{
+    font-size:  18px;
+}
+.editor-section code{
+    color: #d80f3b;
+}
+.editor-section ul{
+    color: black;
+}
+.challange-ul{
+    padding-bottom: 30px;
+    padding-left: 100px;
+}

@@ -1,161 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="/css/feedback.css">
-</head>
-<body>
-    <!--header with navigation-->
-    <header class="header">
-        <div class="header-container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="../images/logo.svg" alt="Sustainable Cities Logo" class="logo">
-                    <h1 class="site-title">Sustainable Cities</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="/css/feedback.css">
+    </head>
+    <body>
+        <!--header with navigation-->
+        <header class="header">
+            <div class="header-container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <img src="../images/logo.svg" alt="Sustainable Cities Logo" class="logo">
+                        <h1 class="site-title">Sustainable Cities</h1>
+                    </div>
+                    <nav class="navigation">
+                        <ul class="nav-list">
+                            <li><a href="../home.html" class="nav-link">Home</a></li>
+                            <li><a href="../volunteer.html" class="nav-link">Volunteer</a></li>
+                            <li><a href="../table.html" class="nav-link">Table</a></li>
+                            <li><a href="../profile.html" class="nav-link">Profile</a></li>
+                            <li><a href="../feedback.html" class="nav-link">Feedback</a></li>
+                            <li><a href="../sitemap.html" class="nav-link">Sitemap</a></li>
+                            <li><a href="../team.html" class="nav-link">Team</a></li>
+                        </ul>
+                    </nav>
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
                 </div>
-                <nav class="navigation">
-                    <ul class="nav-list">
-                        <li><a href="../home.html" class="nav-link">Home</a></li>
-                        <li><a href="../volunteer.html" class="nav-link">Volunteer</a></li>
-                        <li><a href="../table.html" class="nav-link">Table</a></li>
-                        <li><a href="../profile.html" class="nav-link">Profile</a></li>
-                        <li><a href="../feedback.html" class="nav-link">Feedback</a></li>
-                        <li><a href="../sitemap.html" class="nav-link">Sitemap</a></li>
-                        <li><a href="../team.html" class="nav-link">Team</a></li>
-                    </ul>
-                </nav>
-                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
             </div>
-        </div>
-    </header>
-    <main class="wrapper">
-        <section class="form-container">
-            <h1>Contact Us</h1>
-            <form>
-                <fieldset class="form-personal-sec">
-                    <legend class="personal-title">Personal Details</legend>
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" required title="Please enter your full name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" required placeholder="yourmail@gmail.com"  required title="Please enter a valid email address">
-                        <span class="error-message">Please enter a valid email</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telephone Number</label>
-                        <input type="tel" id="phone" pattern="\d{10}" maxlength="10" placeholder="e.g.077......." title="Please enter a valid phone number">
-                        <span class="error-message">Please enter a valid phone number</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Address</label>
-                        <!-- text are eke size eka adjest krnna one -->
-                        <textarea id="address" maxlength="200"></textarea>
-                    </div>
-                </fieldset>
-                <fieldset class="form-feedback-sec">
-                    <div class="form-group">
-                        <label for="feedback-type">Feedback category</label>
-                        <select id="feedback-type">
-                            <option value="urban_planning">Urban Planning & Smart Cities</option>
-                            <option value="transport">Sustainable Transportation</option>
-                            <option value="green_spaces">Green Spaces & Communities</option>
-                            <option value="housing">Affordable Housing & Inclusion</option>
-                        </select>
-                    </div>
-                    <div class="form-group-type">
-                        <label>Feedback Type</label>
-                        <input type="radio" id="fb-type-suggetions" name="feedback-type" value="Suggestion">
-                        <label for="fb-type-suggetions">Suggestion</label>
-                        <input type="radio" id="fb-type-Complaint" name="feedback-type" value="Complaint">
-                        <label for="fb-type-Complaint">Complaint</label>
-                    </div>
-                    <div class="form-group">
-                        <label for="comment">Comment (max 500 characters)</label>
-                        <textarea id="comment" maxlength="500" placeholder="Write your feedback here..." ></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="date">Submission Date</label>
-                        <input type="date" id="date">
-                    </div>
-                    <div class="form-group">
-                        <label for="attachment">Upload Attachment (Image/PDF)</label>
-                        <input type="file" id="attachment" accept="image/*,.pdf">
-                    </div>
-                    <div class="star-rating">
-                        <span class="rate-title">Rate us now</span>
-                        <div class="stars">
-                            <input type="radio" id="star5" name="rating" value="5">
-                            <label for="star5" title="5 stars">★</label>
-
-                            <input type="radio" id="star4" name="rating" value="4">
-                            <label for="star4" title="4 stars">★</label>
-
-                            <input type="radio" id="star3" name="rating" value="3">
-                            <label for="star3" title="3 stars">★</label>
-
-                            <input type="radio" id="star2" name="rating" value="2">
-                            <label for="star2" title="2 stars">★</label>
-
-                            <input type="radio" id="star1" name="rating" value="1">
-                            <label for="star1" title="1 star">★</label>
+        </header>
+        <main class="wrapper">
+            <section class="form-container">
+                <h1 class="form-head">Contact Us</h1>
+                <form>
+                    <fieldset class="form-personal-sec">
+                        <legend class="personal-title">Personal Details</legend>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" required title="Please enter your full name">
                         </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required placeholder="yourmail@gmail.com"  title="Please enter a valid email address">
+                            <span class="error-message">Please enter a valid email</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telephone Number</label>
+                            <input type="tel" id="phone" pattern="\d{10}" maxlength="10" placeholder="e.g.077......." title="Please enter a valid phone number">
+                            <span class="error-message">Please enter a valid phone number</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <!-- text are eke size eka adjest krnna one -->
+                            <textarea id="address" maxlength="200"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-feedback-sec">
+                        <div class="form-group">
+                            <label for="feedback-type">Feedback category</label>
+                            <select id="feedback-type">
+                                <option value="urban_planning">Urban Planning & Smart Cities</option>
+                                <option value="transport">Sustainable Transportation</option>
+                                <option value="green_spaces">Green Spaces & Communities</option>
+                                <option value="housing">Affordable Housing & Inclusion</option>
+                            </select>
+                        </div>
+                        <div class="form-group-type">
+                            <label>Feedback Type</label>
+                            <input type="radio" id="fb-type-suggetions" name="feedback-type" value="Suggestion">
+                            <label for="fb-type-suggetions">Suggestion</label>
+                            <input type="radio" id="fb-type-Complaint" name="feedback-type" value="Complaint">
+                            <label for="fb-type-Complaint">Complaint</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment (max 500 characters)</label>
+                            <textarea id="comment" maxlength="500" placeholder="Write your feedback here..." ></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Submission Date</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="attachment">Upload Attachment (Image/PDF)</label>
+                            <input type="file" id="attachment" accept="image/*,.pdf">
+                        </div>
+                        <div class="star-rating">
+                            <span class="rate-title">Rate us now</span>
+                            <div class="stars">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <label for="star5" title="5 stars">★</label>
+
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4" title="4 stars">★</label>
+
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3" title="3 stars">★</label>
+
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2" title="2 stars">★</label>
+
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1" title="1 star">★</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-button">
+                        <button type="submit" class="main-btn">Submit</button>
+                        <button type="reset" class="secondary-btn">Cancel</button>
                     </div>
-                </fieldset>
-                <div class="form-button">
-                    <button type="submit" class="main-btn">Submit</button>
-                    <button type="reset" class="secondary-btn">Cancel</button>
-                </div>
-            </form>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="wrapper">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4 class="footer-title">Team Members</h4>
-                    <ul class="footer-links">
-                        <li><a href="editor_pages/pageEditor_ST1.html" class="footer-link">Student 1 - Editor Page</a></li>
-                        <li><a href="editor_pages/pageEditor_ST2.html" class="footer-link">Student 2 - Editor Page</a></li>
-                        <li><a href="editor_pages/pageEditor_ST3.html" class="footer-link">Student 3 - Editor Page</a></li>
-                        <li><a href="editor_pages/pageEditor_ST4.html" class="footer-link">Student 4 - Editor Page</a></li>
-                    </ul>
+                </form>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Team Members</h4>
+                        <ul class="footer-links">
+                            <li><a href="editor_pages/pageEditor_ST1.html" class="footer-link">Student 1 - Editor Page</a></li>
+                            <li><a href="editor_pages/pageEditor_ST2.html" class="footer-link">Student 2 - Editor Page</a></li>
+                            <li><a href="editor_pages/pageEditor_ST3.html" class="footer-link">Student 3 - Editor Page</a></li>
+                            <li><a href="editor_pages/pageEditor_ST4.html" class="footer-link">Student 4 - Editor Page</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="volunteer.html" class="footer-link">Volunteer</a></li>
+                            <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+                            <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+                            <li><a href="team.html" class="footer-link">Team</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4 class="footer-title">About This Project</h4>
+                        <p class="footer-text">
+                            This website is dedicated to promoting UN Sustainable Development Goal 11: 
+                            Sustainable Cities and Communities. Created as part of an educational initiative 
+                            to raise awareness about urban sustainability.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="volunteer.html" class="footer-link">Volunteer</a></li>
-                        <li><a href="feedback.html" class="footer-link">Feedback</a></li>
-                        <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
-                        <li><a href="team.html" class="footer-link">Team</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">About This Project</h4>
-                    <p class="footer-text">
-                        This website is dedicated to promoting UN Sustainable Development Goal 11: 
-                        Sustainable Cities and Communities. Created as part of an educational initiative 
-                        to raise awareness about urban sustainability.
-                    </p>
+                <div class="footer-bottom">
+                    <p class="copyright">© 2024 Sustainable Cities & Communities. All rights reserved.</p>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p class="copyright">© 2024 Sustainable Cities & Communities. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

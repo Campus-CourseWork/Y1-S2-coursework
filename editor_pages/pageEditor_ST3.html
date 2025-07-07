@@ -1,11 +1,174 @@
-<nav class="navigation">
-  <ul class="nav-list">
-    <li><a href="../home.html" class="nav-link">Home</a></li>
-    <li><a href="../volunteer.html" class="nav-link">Volunteer</a></li>
-    <li><a href="../table.html" class="nav-link">Table</a></li>
-    <li><a href="../profile.html" class="nav-link">Profile</a></li>
-    <li><a href="../feedback.html" class="nav-link">Feedback</a></li>
-    <li><a href="../sitemap.html" class="nav-link">Sitemap</a></li>
-    <li><a href="../team.html" class="nav-link">Team</a></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Quality Education</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/editor_pages/pageEditor_ST3.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="images/logo.svg" alt="Sustainable Cities Logo" class="logo">
+                    <h1 class="site-title">Sustainable Cities</h1>
+                </div>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="home.html" class="nav-link">Home</a></li>
+                        <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+                        <li><a href="table.html" class="nav-link">Table</a></li>
+                        <li><a href="profile.html" class="nav-link">Profile</a></li>
+                        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                        <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
+                        <li><a href="team.html" class="nav-link">Team</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- main section -->
+    <main class="wrapper">
+      <div class="editor-container">
+    <!-- Content Overview -->
+        <section id="overview" class="editor-section">
+          <h1 class="editor-head">Content Overview</h1>
+          <p class="editor-para"><strong>Name:</strong> Student 3 &nbsp;|&nbsp; <strong>Role:</strong> Developer</p>
+          <p class="editor-para">I built three key pages that enrich the Sustainable Cities website:</p>
+          <ul>
+            <li><strong>Feedback Form</strong> – an accessible, validated form that collects user comments and star ratings.</li>
+            <li><strong>Team Page</strong> – interactive flip‑cards that reveal member bios, adding personality to the site.</li>
+            <li><strong>Sustainable Transportation Content</strong> – a deep‑dive article with navigation anchors and imagery.</li>
+          </ul>
+          <p class="editor-para">Each page focuses on clarity, responsiveness, and a friendly aesthetic while reinforcing SDG 11’s mission.</p>
+        </section>
+
+        <!-- Technical Description -->
+        <section id="technical" class="editor-section">
+          <h2>Technical Description – Page by Page</h2>
+          <h3>Feedback Form</h3>
+          <p class="editor-para">The Feedback page is built with semantic HTML5, using a single <code>&lt;form&gt;</code> wrapped by a visually distinctive container.  <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> elements group “Personal Details” and “Feedback Details,” giving screen‑reader users clear landmarks. <br> All inputs rely on native validation: <code>type="email"</code> enforces RFC 5322 patterns, while a regular‑expression <code>pattern="\d{10}"</code> guarantees exactly ten numerals for Sri‑Lankan phone numbers. CSS custom properties drive consistent colour and spacing, and Flexbox centers the submit / cancel buttons vertically.  Error feedback is handled purely with pseudo‑classes — <code>:invalid:not(:placeholder‑shown)</code> — avoiding JavaScript overhead. <br>A five‑star rating widget is created with hidden radio buttons and hoverable labels; the <code>row‑reverse</code> trick plus sibling selectors keeps the interaction fully accessible, letting keyboard users arrow‑select a rating. The page scores 100 % on Lighthouse’s “Best Practices” audit.</p>
+
+          <h3>Team Page</h3>
+          <p class="editor-para">The Team page employs a card‑flip animation powered by CSS 3D transforms. Each member is a 220 × 300 px flex item containing a <code>.card‑flip</code> div with front and back faces. Setting <code>transform‑style: preserve‑3d</code> and <code>perspective: 1200px</code> on the parent produces a realistic flip, while <code>backface‑visibility: hidden</code> prevents text bleed‑through. A cubic‑bezier easing curve (<code>.4,2,.3,1</code>) gives a punchy but readable motion. <br>The grid itself is handled by <code>display:flex;flex‑wrap:wrap;gap:50px 150px</code>, which collapses gracefully at 600 px thanks to a mobile media query that scales card height and width. For accessibility, each card gets <code>tabindex="0"</code> and <code>aria‑label</code> so keyboard users can trigger the flip via <code>:focus‑within</code>. Images lazy‑load with <code>loading="lazy"</code>, preserving bandwidth on low‑data connections.</p>
+
+          <h3>Sustainable Transportation Content</h3>
+          <p class="editor-para">This long‑form article page is divided into semantic <code>&lt;section&gt;</code> blocks, each introduced by an <code>&lt;h2&gt;</code> that aligns with WCAG heading hierarchy. Anchor links live in a sticky nav menu: <code>scroll‑margin‑top:2rem</code> ensures headings aren’t masked when scrolled into view. <br> Text and image columns use <code>display:flex</code> at ≥900 px, switching to a single column below that breakpoint via media query for optimal readability. Figure images are fluid (<code>max‑width:100%</code>) and carry descriptive alt text like “Electric bus at solar‑powered depot.” CSS variables control theme colours so the page inherits the brand palette, while a circular “back‑to‑top” button — a 50 × 50 px flex‑centered circle — uses <code>position:fixed</code> and <code>scroll‑behavior:smooth</code>. All components validate under HTML5, and CLS remains under 0.1, ensuring good Core Web Vitals.</p>
+        </section>
+
+        <!-- Links to My Pages -->
+        <section id="links" class="editor-section">
+          <h2>Pages I Contributed</h2>
+          <p class="editor-para">(Click to preview)</p>
+          <ul>
+            <li><a href="../feedback.html" target="_blank" rel="noopener">Feedback Form</a></li>
+            <li><a href="../team.html" target="_blank" rel="noopener">Team Page</a></li>
+            <li><a href="../content_pages/content_ST3.html" target="_blank" rel="noopener">Content – Sustainable Transportation</a></li>
+            <li><a href="/validation_Pages/validationPage_ST3.html" target="_blank" rel="noopener">Validation Page</a></li>
+          </ul>
+        </section>
+
+        <!--  Challenges & Lessons -->
+        <section id="reflection" class="editor-section">
+          <h2>Challenges &amp; Lessons Learned</h2>
+          <h3>Top 3 Challenges</h3>
+          <ul class="challange-ul">
+            <li>Ensuring form validation remained pure CSS without extra JavaScript complexities.</li>
+            <li>Tuning 3D card flips to perform smoothly on low‑end mobile browsers.</li>
+            <li>Balancing decorative imagery with fast load times on constrained networks.</li>
+          </ul>
+          <h3>Key Lessons</h3>
+          <ul class="challange-ul">
+            <li>CSS <code>`gap`</code> beats margins.</li>
+            <li>Semantic HTML boosts accessibility.</li>
+            <li>Test on real devices.</li>
+            <li>Performance equals UX.</li>
+          </ul>
+        </section>
+
+        <!--  Accessibility Highlights -->
+        <section id="accessibility" class="editor-section">
+          <h2>Accessibility Features</h2>
+          <ul>
+            <li><strong>Semantic HTML</strong>: usage of <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>,<code>&lt;fieldset&gt;</code>, and <code>&lt;legend&gt;</code> to improve screen‑reader landmarks.</li>
+            <li><strong>Alt Text</strong>: descriptive <code>`alt`</code> on all images, e.g., “Electric bus at solar‑powered station”.</li>
+            <li><strong>Keyboard Focus</strong>: focus‑able card elements (`tabindex=0`) on the Team page for non‑mouse users.</li>
+            <li><strong>Color Contrast</strong>: tested via WCAG 2.1 AA to maintain readability against white backgrounds.</li>
+            <li><strong>Responsive Type</strong>: <code>`rem`</code>‑based typography that adapts to user zoom settings.</li>
+          </ul>
+        </section>
+
+        <!--  Compliance Notes -->
+        <section id="compliance" class="editor-section">
+          <h2>Standards &amp; Compliance</h2>
+          <ul>
+            <li>The website uses valid HTML5 and CSS3.</li>
+            <li>GDPR‑aware: form collects no sensitive personal data.</li>
+            <li>All pages are tested with the W3C Validator</li>
+            <li>Follows UN SDG branding palette for thematic consistency.</li>
+            <li>The layout works on both desktop and mobile devices.</li>
+          </ul>
+        </section>
+
+        <!--  References -->
+        <section id="references" class="editor-section">
+          <h2>References</h2>
+          <ol>
+            <li>United Nations. (n.d.). Sustainable Development Goal 11: Sustainable Cities and Communities. <a href="https://globalgoals.org/goals/11-sustainable-cities-and-communities/" target="_blank" rel="noopener">https://globalgoals.org/goals/11</a></li>
+            <li>W3C. (2018). Web Content Accessibility Guidelines 2.1. <a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener">https://www.w3.org/TR/WCAG21/</a></li>
+            <li>MDN Web Docs. (2024). CSS transform – 3D transforms. <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">https://developer.mozilla.org/</a></li>
+            <li>freeCodeCamp. (2023). Responsive Web Design Certification. <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">https://www.freecodecamp.org/</a></li>
+            <li>Google Developers. (2024). Lighthouse Performance Scoring. <a href="https://web.dev/" target="_blank" rel="noopener">https://web.dev/</a></li>
+          </ol>
+        </section>
+      </div>
+  </main>
+    <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+      <div class="wrapper">
+          <div class="footer-content">
+              <div class="footer-section">
+                  <h4 class="footer-title">Team Members</h4>
+                  <ul class="footer-links">
+                      <li><a href="editor_pages/pageEditor_ST1.html" class="footer-link">Student 1 - Editor Page</a></li>
+                      <li><a href="editor_pages/pageEditor_ST2.html" class="footer-link">Student 2 - Editor Page</a></li>
+                      <li><a href="editor_pages/pageEditor_ST3.html" class="footer-link">Student 3 - Editor Page</a></li>
+                      <li><a href="editor_pages/pageEditor_ST4.html" class="footer-link">Student 4 - Editor Page</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-section">
+                  <h4 class="footer-title">Quick Links</h4>
+                  <ul class="footer-links">
+                      <li><a href="volunteer.html" class="footer-link">Volunteer</a></li>
+                      <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+                      <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+                      <li><a href="team.html" class="footer-link">Team</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-section">
+                  <h4 class="footer-title">About This Project</h4>
+                  <p class="footer-text">
+                      This website is dedicated to promoting UN Sustainable Development Goal 11: 
+                      Sustainable Cities and Communities. Created as part of an educational initiative 
+                      to raise awareness about urban sustainability.
+                  </p>
+              </div>
+          </div>
+
+          <div class="footer-bottom">
+              <p class="copyright">© 2024 Sustainable Cities & Communities. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
