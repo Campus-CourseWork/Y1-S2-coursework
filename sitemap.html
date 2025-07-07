@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap - Sustainable Cities</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/sitemap.css">
+  <style>
+    /* New CSS for the redesigned sitemap */
+    .sitemap-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    .sitemap-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+      font-size: 2.5rem;
+    }
+    
+    .sitemap-tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .tree-level {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    
+    .tree-node {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1rem 1.5rem;
+      margin: 0 1rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .tree-node a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .tree-node:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      background: #f8f9fa;
+    }
+    
+    .tree-node.active {
+      background: #3498db;
+    }
+    
+    .tree-node.active a {
+      color: white;
+    }
+    
+    .tree-connector {
+      position: absolute;
+      background: #bdc3c7;
+      width: 2px;
+      height: 2rem;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .tree-connector.horizontal {
+      width: 4rem;
+      height: 2px;
+      top: 50%;
+      left: auto;
+      right: -4rem;
+      bottom: auto;
+      transform: translateY(-50%);
+    }
+    
+    .tree-branch {
+      display: flex;
+      position: relative;
+    }
+    
+    .tree-branch .tree-connector {
+      height: 1rem;
+    }
+    
+    .tree-branch::before {
+      content: '';
+      position: absolute;
+      background: #bdc3c7;
+      width: 2px;
+      height: 1rem;
+      top: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .mobile-sitemap {
+      display: none;
+    }
+    
+    @media (max-width: 768px) {
+      .desktop-sitemap {
+        display: none;
+      }
+      
+      .mobile-sitemap {
+        display: block;
+      }
+      
+      .mobile-node {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        padding: 0.8rem 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      .mobile-node a {
+        color: #2c3e50;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .mobile-children {
+        padding-left: 1.5rem;
+        border-left: 2px solid #ecf0f1;
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-content">
+        <div class="logo-section">
+          <img src="logo.svg" alt="Sustainable Cities Logo" class="logo">
+          <h1 class="site-title">Sustainable Cities</h1>
+        </div>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li><a href="table.html" class="nav-link">Table</a></li>
+            <li><a href="profile.html" class="nav-link">Profile</a></li>
+            <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+            <li><a href="sitemap.html" class="nav-link active">Sitemap</a></li>
+            <li><a href="team.html" class="nav-link">Team</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="sitemap-container">
+      <h2 class="sitemap-title">Website Structure</h2>
+      
+      <!-- Desktop Sitemap -->
+      <div class="desktop-sitemap">
+        <div class="sitemap-tree">
+          <!-- Level 1 - Splash -->
+          <div class="tree-level">
+            <div class="tree-node active">
+              <a href="splash.html">Splash Page</a>
+              <div class="tree-connector"></div>
+            </div>
+          </div>
+          
+          <!-- Level 2 - Home -->
+          <div class="tree-level">
+            <div class="tree-node">
+              <a href="home.html">Home</a>
+              <div class="tree-connector"></div>
+            </div>
+          </div>
+          
+          <!-- Level 3 - Main Pages -->
+          <div class="tree-level">
+            <div class="tree-branch">
+              <div class="tree-node">
+                <a href="table.html">Data Table</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="feedback.html">Feedback</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node active">
+                <a href="sitemap.html">Sitemap</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="team.html">Our Team</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="#footer">Footer</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="profile.html">User Profile</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="volunteer.html">Volunteer</a>
+                <div class="tree-connector"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Level 4 - Content Pages -->
+          <div class="tree-level">
+            <div class="tree-branch">
+              <div class="tree-node">
+                <a href="content_ST1.html">Content ST1</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="content_ST2.html">Content ST2</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="content_ST3.html">Content ST3</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="content_ST4.html">Content ST4</a>
+                <div class="tree-connector"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Level 5 - Editor Pages -->
+          <div class="tree-level">
+            <div class="tree-branch">
+              <div class="tree-node">
+                <a href="editor_pages/pageEditor_ST1.html">Editor ST1</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="editor_pages/pageEditor_ST2.html">Editor ST2</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="editor_pages/pageEditor_ST3.html">Editor ST3</a>
+                <div class="tree-connector"></div>
+              </div>
+              <div class="tree-node">
+                <a href="editor_pages/pageEditor_ST4.html">Editor ST4</a>
+                <div class="tree-connector"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Level 6 - Validation Pages -->
+          <div class="tree-level">
+            <div class="tree-branch">
+              <div class="tree-node">
+                <a href="validation_pages/validation_ST1.html">Validation ST1</a>
+              </div>
+              <div class="tree-node">
+                <a href="validation_pages/validation_ST2.html">Validation ST2</a>
+              </div>
+              <div class="tree-node">
+                <a href="validation_pages/validation_ST3.html">Validation ST3</a>
+              </div>
+              <div class="tree-node">
+                <a href="validation_pages/validation_ST4.html">Validation ST4</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile Sitemap -->
+      <div class="mobile-sitemap">
+        <div class="mobile-node">
+          <a href="splash.html">Splash Page</a>
+          <div class="mobile-children">
+            <div class="mobile-node">
+              <a href="home.html">Home</a>
+              <div class="mobile-children">
+                <div class="mobile-node">
+                  <a href="table.html">Data Table</a>
+                </div>
+                <div class="mobile-node">
+                  <a href="feedback.html">Feedback</a>
+                </div>
+                <div class="mobile-node">
+                  <a href="sitemap.html">Sitemap</a>
+                </div>
+                <div class="mobile-node">
+                  <a href="team.html">Our Team</a>
+                  <div class="mobile-children">
+                    <div class="mobile-node">
+                      <a href="validation_pages/validation_ST1.html">Validation ST1</a>
+                    </div>
+                    <div class="mobile-node">
+                      <a href="validation_pages/validation_ST2.html">Validation ST2</a>
+                    </div>
+                    <div class="mobile-node">
+                      <a href="validation_pages/validation_ST3.html">Validation ST3</a>
+                    </div>
+                    <div class="mobile-node">
+                      <a href="validation_pages/validation_ST4.html">Validation ST4</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-node">
+                  <a href="#footer">Footer</a>
+                  <div class="mobile-children">
+                    <div class="mobile-node">
+                      <a href="editor_pages/pageEditor_ST1.html">Editor ST1</a>
+                    </div>
+                    <div class="mobile-node">
+                      <a href="editor_pages/pageEditor_ST2.html">Editor ST2</a>
+                    </div>
+                    <div class="mobile-node">
+                      <a href="editor_pages/pageEditor_ST3.html">Editor ST3</a>
+                    </div>
+                    <div class="mobile-node">
+                      <a href="editor_pages/pageEditor_ST4.html">Editor ST4</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-node">
+                  <a href="user.html">User Profile</a>
+                </div>
+                <div class="mobile-node">
+                  <a href="volunteer.html">Volunteer</a>
+                </div>
+                <div class="mobile-node">
+                  <a href="content_ST1.html">Content ST1</a>
+                </div>
+                <div class="mobile-node">
+                  <a href="content_ST2.html">Content ST2</a>
+                </div>
+                <div class="mobile-node">
+                  <a href="content_ST3.html">Content ST3</a>
+                </div>
+                <div class="mobile-node">
+                  <a href="content_ST4.html">Content ST4</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="wrapper">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 class="footer-title">Team Members</h4>
+          <ul class="footer-links">
+            <li><a href="editor_pages/pageEditor_ST1.html" class="footer-link">Student 1 - Editor Page</a></li>
+            <li><a href="editor_pages/pageEditor_ST2.html" class="footer-link">Student 2 - Editor Page</a></li>
+            <li><a href="editor_pages/pageEditor_ST3.html" class="footer-link">Student 3 - Editor Page</a></li>
+            <li><a href="editor_pages/pageEditor_ST4.html" class="footer-link">Student 4 - Editor Page</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="volunteer.html" class="footer-link">Volunteer</a></li>
+            <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+            <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+            <li><a href="team.html" class="footer-link">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">About This Project</h4>
+          <p class="footer-text">
+            This website is dedicated to promoting UN Sustainable Development Goal 11: Sustainable Cities and Communities.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          © 2024 Sustainable Cities & Communities. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
