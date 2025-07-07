@@ -1,6 +1,7 @@
 h1{
     text-align: center;
     padding: 50px;
+    color: #0c6c08;
 }
 .form-container { 
     max-width: 500px; 
@@ -80,7 +81,7 @@ input, textarea, select {
 }
 .rate-title {
   font-size: 1.1rem;
-  color: #000;
+  color: #2a5219;
   font-weight: 600;
 }
 .stars {
@@ -110,6 +111,11 @@ input, textarea, select {
 .stars input:checked ~ label {
   color: gold;
   -webkit-text-stroke: 0;
+}
+.form-buttons{
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
 }
 
 
