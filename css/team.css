@@ -1,12 +1,27 @@
 .team-container {
+    max-width: auto; 
+    margin: 20px auto;
+    margin-top: 150px; 
+    padding: 20px;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow:  7px 7px 98px #d8d6d6,-7px -7px 98px #ffffff;
+    overflow: hidden;
+}
+.card-container {
   max-width: 900px;
   margin: 32px auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px 24px;
+  gap: 50px 150px;
   justify-content: center;
 }
-
+.team-head {
+  text-align: center;
+  padding: 25px;
+  color: #14ac28;
+  margin-bottom: 100px;
+}
 .team-member {
   width: 220px;
   perspective: 1200px;
