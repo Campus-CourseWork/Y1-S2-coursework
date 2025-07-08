@@ -1,0 +1,181 @@
+/* Scoped CSS for profile page */
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .card {
+    background: rgba(255 255 255 / 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+    padding: 1.5rem;
+    flex: 1 1 300px;
+    transition: box-shadow 0.3s ease;
+  }
+  .card:hover {
+    box-shadow: 0 6px 12px rgb(0 0 0 / 0.2);
+  }
+  
+  /* Avatar & Info */
+  .avatar-section {
+    text-align: center;
+  }
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2a7a2a; /* Sustainable green */
+    margin-bottom: 1rem;
+  }
+  .user-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+  .user-role {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Introduction */
+  .intro-section h3 {
+    margin-bottom: 0.5rem;
+    color: #2a7a2a;
+  }
+  .intro-section p {
+    font-style: italic;
+    line-height: 1.4;
+  }
+  
+  /* Skills & Goals with bars */
+  .skills-section h3 {
+    margin-bottom: 0.5rem;
+    color: #2a7a2a;
+  }
+  .skill {
+    margin-bottom: 1rem;
+  }
+  .skill-label {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .skill-bar-bg {
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .skill-bar-fill {
+    background: #2a7a2a;
+    height: 18px;
+    border-radius: 10px 0 0 10px;
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+  
+  /* Volunteering and Interests */
+  .volunteering-section,
+  .interests-section {
+    margin-top: 1rem;
+  }
+  .volunteering-section h3,
+  .interests-section h3 {
+    color: #2a7a2a;
+    margin-bottom: 0.5rem;
+  }
+  .icon-list {
+    display: flex;
+    gap: 1rem;
+  }
+  .icon-item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .icon-item:hover {
+    transform: scale(1.2);
+  }
+  .icon-item img {
+    width: 50px;
+    height: 50px;
+  }
+  .icon-label {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Availability table */
+  table.availability {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  table.availability th,
+  table.availability td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  table.availability th {
+    background: #2a7a2a;
+    color: white;
+  }
+  table.availability td.available {
+    background: #a8d5a8;
+  }
+  table.availability td.unavailable {
+    background: #f8c1c1;
+  }
+  
+  /* Contact Form */
+  .contact-section h3 {
+    color: #2a7a2a;
+    margin-bottom: 0.5rem;
+  }
+  form.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  form.contact-form label {
+    font-weight: 600;
+  }
+  form.contact-form input,
+  form.contact-form textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  form.contact-form textarea {
+    resize: vertical;
+  }
+  form.contact-form button {
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #2a7a2a;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  form.contact-form button:hover {
+    background: #1e541e;
+  }
+  form.contact-form .btn-reset {
+    background: #c14444;
+  }
+  form.contact-form .btn-reset:hover {
+    background: #8b3030;
+  }
+  
+  /* Responsive */
+  @media (max-width: 700px) {
+    .profile-section {
+      flex-direction: column;
+    }
+  }
+  
