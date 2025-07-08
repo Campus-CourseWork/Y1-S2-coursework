@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile - Sustainable Cities & Communities</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+<!-- Header with Navigation -->
+<header class="header">
+  <div class="header-container">
+    <div class="header-content">
+      <div class="logo-section">
+        <img src="logo.svg" alt="Sustainable Cities Logo" class="logo">
+        <h1 class="site-title">Sustainable Cities</h1>
+      </div>
+      <nav class="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+          <li><a href="table.html" class="nav-link">Table</a></li>
+          <li><a href="profile.html" class="nav-link active">Profile</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="sitemap.html" class="nav-link">Sitemap</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="wrapper profile-section">
+    <!-- Avatar & User Info -->
+    <section class="card avatar-section" aria-labelledby="profile-heading">
+      <img
+        src="img/ramzy.jpg"
+        alt="User avatar"
+        class="avatar"
+      >
+      <h2 id="profile-heading" class="user-name">Ramzy </h2>
+      <p class="user-role">Student 4</p>
+    </section>
+
+    <!-- Introduction -->
+    <section class="card intro-section" aria-labelledby="intro-heading">
+      <h3 id="intro-heading">Introduction</h3>
+      <p>
+        Hello! I am 23 years old and currently pursuing my degree at Westminster University
+     in Bsc(Hons) Computer Science. I am passionate about
+    creating eco-friendly and inclusive cities that foster community well-being.
+      </p>
+    </section>
+
+    <!-- Skills & Goals -->
+    <section class="card skills-section" aria-labelledby="skills-heading">
+      <h3 id="skills-heading">Skills & Goals</h3>
+      <div class="skill">
+        <div class="skill-label">Community Engagement</div>
+        <div class="skill-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" aria-label="Community Engagement skill level">
+          <div class="skill-bar-fill" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-label">Project Management</div>
+        <div class="skill-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" aria-label="Project Management skill level">
+          <div class="skill-bar-fill" style="width: 75%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteering -->
+    <section class="card volunteering-section" aria-labelledby="volunteering-heading">
+      <h3 id="volunteering-heading">Volunteering Activities</h3>
+      <ul>
+        <li>Organized tree planting drives in local communities</li>
+        <li>Supported community outreach programs for sustainable living</li>
+        <li>Participated in environmental cleanup campaigns</li>
+        <li>Volunteered as a mentor for sustainability education workshops</li>
+      </ul>
+    </section>
+
+    <!-- Interests -->
+    <section class="card interests-section" aria-labelledby="interests-heading">
+      <h3 id="interests-heading">Interests</h3>
+      <ul class="icon-list">
+        <li class="icon-item" tabindex="0">
+          <img src="https://img.icons8.com/color/48/000000/plant-under-sun.png" alt="Planting trees icon">
+          <div class="icon-label">Tree Planting</div>
+        </li>
+        <li class="icon-item" tabindex="0">
+          <img src="https://img.icons8.com/color/48/000000/water--v1.png" alt="Clean water icon">
+          <div class="icon-label">Clean Water</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Availability Table -->
+    <section class="card availability-section" aria-labelledby="availability-heading">
+      <h3 id="availability-heading">Availability</h3>
+      <table class="availability">
+        <caption>User availability for volunteering or meetings</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Morning</th>
+            <th scope="col">Afternoon</th>
+            <th scope="col">Evening</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td class="available">✔</td>
+            <td class="available">✔</td>
+            <td class="unavailable">✘</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td class="unavailable">✘</td>
+            <td class="available">✔</td>
+            <td class="available">✔</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td class="available">✔</td>
+            <td class="unavailable">✘</td>
+            <td class="available">✔</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td class="available">✔</td>
+            <td class="available">✔</td>
+            <td class="unavailable">✘</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td class="unavailable">✘</td>
+            <td class="available">✔</td>
+            <td class="available">✔</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+
+    <!-- Contact Me Form -->
+    <section class="card contact-section" aria-labelledby="contact-heading">
+      <h3 id="contact-heading">Contact Me</h3>
+      <form action="#" method="post" class="contact-form" novalidate>
+        <label for="contact-name">Name:</label>
+        <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
+
+        <label for="contact-email">Email:</label>
+        <input type="email" id="contact-email" name="email" placeholder="Your email address" required>
+
+        <label for="contact-phone">Telephone Number:</label>
+        <input type="tel" id="contact-phone" name="telephone" placeholder="Your phone number">
+
+        <label for="contact-message">Message or Inquiry:</label>
+        <textarea id="contact-message" name="message" rows="4" placeholder="Your message"></textarea>
+
+        <button type="submit">Send</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </form>
+    </section>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer" >
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4 class="footer-title">Team Members</h4>
+        <ul class="footer-links">
+          <li><a href="editor_pages/pageEditor_ST1.html" class="footer-link">Student 1 - Editor Page</a></li>
+          <li><a href="editor_pages/pageEditor_ST2.html" class="footer-link">Student 2 - Editor Page</a></li>
+          <li><a href="editor_pages/pageEditor_ST3.html" class="footer-link">Student 3 - Editor Page</a></li>
+          <li><a href="editor_pages/pageEditor_ST4.html" class="footer-link">Student 4 - Editor Page</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="volunteer.html" class="footer-link">Volunteer</a></li>
+          <li><a href="feedback.html" class="footer-link">Feedback</a></li>
+          <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+          <li><a href="team.html" class="footer-link">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">About This Project</h4>
+        <p class="footer-text">
+          This website is dedicated to promoting UN Sustainable Development Goal 11:
+          Sustainable Cities and Communities. Created as part of an educational initiative
+          to raise awareness about urban sustainability.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">© 2024 Sustainable Cities & Communities. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
